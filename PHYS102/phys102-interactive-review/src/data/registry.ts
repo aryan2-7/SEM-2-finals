@@ -18,7 +18,7 @@ export const topics: TopicMeta[] = [
   // Ch1
   { id: 'vectors-basics', chapterId: 'ch1', title: 'Scalars, Vectors & Notation', featured: false },
   { id: 'vector-addition', chapterId: 'ch1', title: 'Addition & Scalar Multiplication', featured: false },
-  { id: 'dot-cross', chapterId: 'ch1', title: 'Dot & Cross Product', featured: false },
+  { id: 'dot-cross', chapterId: 'ch1', title: 'Dot & Cross Product', featured: true },
   { id: 'component-form', chapterId: 'ch1', title: 'Component Form & Calculator', featured: false },
   { id: 'triple-products', chapterId: 'ch1', title: 'Triple Products', featured: false },
   { id: 'del-operator', chapterId: 'ch1', title: 'Gradient, Divergence, Curl', featured: true },
@@ -51,16 +51,16 @@ export const topics: TopicMeta[] = [
 
   // Ch4
   { id: 'lorentz-force', chapterId: 'ch4', title: 'Lorentz Force', featured: false },
-  { id: 'cyclotron-cycloid', chapterId: 'ch4', title: 'Cyclotron & Cycloid Motion', featured: false },
+  { id: 'cyclotron-cycloid', chapterId: 'ch4', title: 'Cyclotron & Cycloid Motion', featured: true },
   { id: 'flux', chapterId: 'ch4', title: 'Magnetic Flux', featured: false },
   { id: 'current-densities', chapterId: 'ch4', title: 'Current Densities & Continuity', featured: false },
   { id: 'forces-currents', chapterId: 'ch4', title: 'Forces on Currents', featured: false },
   { id: 'biot-savart', chapterId: 'ch4', title: 'Biot–Savart Law', featured: true },
-  { id: 'ampere-law', chapterId: 'ch4', title: "Ampere's Law", featured: false },
+  { id: 'ampere-law', chapterId: 'ch4', title: "Ampere's Law", featured: true },
   { id: 'vector-potential', chapterId: 'ch4', title: 'Vector Potential A', featured: false },
 
   // Ch5
-  { id: 'magnetic-dipole', chapterId: 'ch5', title: 'Magnetic Dipole Moment', featured: false },
+  { id: 'magnetic-dipole', chapterId: 'ch5', title: 'Magnetic Dipole Moment', featured: true },
   { id: 'bound-current', chapterId: 'ch5', title: 'Bound Current — Physical Interpretation', featured: true },
   { id: 'h-field', chapterId: 'ch5', title: "Ampere's Law in Materials (H)", featured: false },
   { id: 'susceptibility', chapterId: 'ch5', title: 'Susceptibility & Material Types', featured: false },
@@ -69,11 +69,11 @@ export const topics: TopicMeta[] = [
   { id: 'hysteresis-loss', chapterId: 'ch5', title: 'Hysteresis Loss', featured: true },
 
   // Ch6
-  { id: 'motional-emf', chapterId: 'ch6', title: 'Motional EMF', featured: false },
+  { id: 'motional-emf', chapterId: 'ch6', title: 'Motional EMF', featured: true },
   { id: 'faraday-law', chapterId: 'ch6', title: "Faraday's Law & Lenz's Law", featured: true },
   { id: 'lenz-law', chapterId: 'ch6', title: "Lenz's Law", featured: false },
   { id: 'self-induction', chapterId: 'ch6', title: 'Self-Induction & RL Circuits', featured: true },
-  { id: 'mutual-induction', chapterId: 'ch6', title: 'Mutual Induction', featured: false },
+  { id: 'mutual-induction', chapterId: 'ch6', title: 'Mutual Induction', featured: true },
   { id: 'magnetic-energy', chapterId: 'ch6', title: 'Energy in Magnetic Field', featured: false },
 
   // Ch7
@@ -84,16 +84,16 @@ export const topics: TopicMeta[] = [
   { id: 'wave-equation', chapterId: 'ch7', title: 'EM Wave Equation & Speed c', featured: true },
 
   // Ch8
-  { id: 'atomic-spectra', chapterId: 'ch8', title: 'Atomic Spectra & Rydberg', featured: false },
+  { id: 'atomic-spectra', chapterId: 'ch8', title: 'Atomic Spectra & Rydberg', featured: true },
   { id: 'molecular-transitions', chapterId: 'ch8', title: 'Types of Molecular Transitions', featured: true },
   { id: 'raman-effect', chapterId: 'ch8', title: 'Raman Effect', featured: true },
-  { id: 'superconductivity', chapterId: 'ch8', title: 'Superconductivity', featured: false },
+  { id: 'superconductivity', chapterId: 'ch8', title: 'Superconductivity', featured: true },
 
   // Ch9
-  { id: 'binding-energy', chapterId: 'ch9', title: 'Mass Defect & Binding Energy', featured: false },
+  { id: 'binding-energy', chapterId: 'ch9', title: 'Mass Defect & Binding Energy', featured: true },
   { id: 'radioactivity', chapterId: 'ch9', title: 'Radioactivity & Half-Life', featured: true },
   { id: 'reaction-types', chapterId: 'ch9', title: 'Types of Nuclear Reactions', featured: false },
-  { id: 'q-value', chapterId: 'ch9', title: 'Q-Value', featured: false },
+  { id: 'q-value', chapterId: 'ch9', title: 'Q-Value', featured: true },
   { id: 'threshold-energy', chapterId: 'ch9', title: 'Threshold Energy', featured: true },
   { id: 'fission-fusion', chapterId: 'ch9', title: 'Fission & Fusion', featured: false },
 ];

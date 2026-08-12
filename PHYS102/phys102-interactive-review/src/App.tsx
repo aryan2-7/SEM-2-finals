@@ -25,6 +25,16 @@ import SelfInduction from './topics/SelfInduction';
 import DisplacementCurrent from './topics/DisplacementCurrent';
 import WaveEquation from './topics/WaveEquation';
 import Radioactivity from './topics/Radioactivity';
+import DotCross from './topics/DotCross';
+import AmpereLaw from './topics/AmpereLaw';
+import CyclotronCycloid from './topics/CyclotronCycloid';
+import MagneticDipole from './topics/MagneticDipole';
+import MotionalEmf from './topics/MotionalEmf';
+import MutualInduction from './topics/MutualInduction';
+import AtomicSpectra from './topics/AtomicSpectra';
+import Superconductivity from './topics/Superconductivity';
+import BindingEnergy from './topics/BindingEnergy';
+import QValue from './topics/QValue';
 
 const STORAGE_KEY = 'phys102-visited';
 
@@ -49,6 +59,16 @@ const featuredComponents: Record<string, React.ComponentType> = {
   'displacement-current': DisplacementCurrent,
   'wave-equation': WaveEquation,
   'radioactivity': Radioactivity,
+  'dot-cross': DotCross,
+  'ampere-law': AmpereLaw,
+  'cyclotron-cycloid': CyclotronCycloid,
+  'magnetic-dipole': MagneticDipole,
+  'motional-emf': MotionalEmf,
+  'mutual-induction': MutualInduction,
+  'atomic-spectra': AtomicSpectra,
+  'superconductivity': Superconductivity,
+  'binding-energy': BindingEnergy,
+  'q-value': QValue,
 };
 
 // Nav entries that are really aliases of another featured topic's page
