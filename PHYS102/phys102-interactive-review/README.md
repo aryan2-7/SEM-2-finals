@@ -1,32 +1,55 @@
-# React + TypeScript + Vite
+# PHYS102 Interactive Review
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+An interactive study app covering high-yield derivations from the PHYS102 course notes
+(Electrostatics, Magnetostatics, EM Induction, EM Waves, Atoms & Molecules, Nuclear Physics).
 
-Currently, two official plugins are available:
+## What's fully built
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Ch.1** — The Del Operator (gradient / divergence / curl)
+- **Ch.2** — Coulomb's Law & Superposition · Gauss's Law
+- **Ch.3** — Short Dipole Field · Dipole in an External Field · Polarization & Bound Charge
+- **Ch.4** — Biot–Savart Law
+- **Ch.5** — Bound Current & Physical Interpretation · Hysteresis Loop · Hysteresis Loss
+- **Ch.6** — Faraday's Law & Lenz's Law · Self-Induction & RL Circuits
+- **Ch.7** — Displacement Current · Macroscopic Maxwell Equations (D, H) · Poynting's Theorem ·
+  EM Wave Equation & Speed of Light
+- **Ch.8** — Types of Molecular Transitions (slide deck) · Raman Effect (slide deck)
+- **Ch.9** — Threshold Energy · Radioactivity & Half-Life
 
-## React Compiler
+Each topic has: a concept summary, KaTeX-rendered formulas, a step-by-step derivation you reveal one step
+at a time, a hand-built interactive visualization, and a self-check quiz with instant feedback.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The full 9-chapter nav is present in the sidebar and home dashboard — non-built topics show a placeholder
+rather than being silently missing. Progress (which featured topics you've visited) is saved to localStorage.
 
-## Expanding the Oxlint configuration
+## Run it
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Then open the printed local URL. For a production build:
+
+```bash
+npm run build
+npm run preview
+```
+
+## Deployment
+
+This app deploys to GitHub Pages via `.github/workflows/deploy.yml` on pushes to the `Phys-Web` branch.
+Note `vite.config.ts` sets `base: '/SEM-2-finals/'` to match the GitHub Pages subpath — update that if the
+repo name changes.
+
+## Stack
+
+React + TypeScript + Vite, react-katex for math, hand-rolled SVG/Canvas for all visualizations.
+
+## Extending
+
+- Add a new topic: create a `src/topics/<Name>.tsx` using the `TopicShell`/`Section`/`Derivation`/`Quiz`
+  building blocks in `src/components/`, then register it in `src/data/registry.ts` (set `featured: true`)
+  and wire it into `featuredComponents` in `src/App.tsx`.
+- To make one nav entry point at another topic's page (like Lenz's Law living on the Faraday's Law page),
+  add an entry to `aliasRedirect` in `src/App.tsx` instead of building a duplicate page.

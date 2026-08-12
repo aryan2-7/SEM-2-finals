@@ -12,9 +12,8 @@ export default function Placeholder({ title, chapterLabel, accent }: { title: st
         color: 'var(--text-dim)',
         fontSize: 14,
       }}>
-        This topic isn't built out yet in this pass — the ten starred derivations (dipole field, polarization,
-        bound current, hysteresis loop &amp; loss, macroscopic Maxwell equations, Poynting's theorem, molecular
-        transitions, the Raman effect, and threshold energy) are fully interactive. Ask to have this one added next.
+        This topic isn't built out yet in this pass — the topics marked with a dot in the sidebar and home
+        dashboard are fully interactive. Ask to have this one added next.
       </div>
     </div>
   );

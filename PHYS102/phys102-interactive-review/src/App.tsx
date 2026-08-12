@@ -15,6 +15,16 @@ import Poynting from './topics/Poynting';
 import MolecularTransitions from './topics/MolecularTransitions';
 import RamanEffect from './topics/RamanEffect';
 import ThresholdEnergy from './topics/ThresholdEnergy';
+import DelOperator from './topics/DelOperator';
+import CoulombLaw from './topics/CoulombLaw';
+import GaussLaw from './topics/GaussLaw';
+import DipoleExternal from './topics/DipoleExternal';
+import BiotSavart from './topics/BiotSavart';
+import FaradayLenz from './topics/FaradayLenz';
+import SelfInduction from './topics/SelfInduction';
+import DisplacementCurrent from './topics/DisplacementCurrent';
+import WaveEquation from './topics/WaveEquation';
+import Radioactivity from './topics/Radioactivity';
 
 const STORAGE_KEY = 'phys102-visited';
 
@@ -29,6 +39,22 @@ const featuredComponents: Record<string, React.ComponentType> = {
   'molecular-transitions': MolecularTransitions,
   'raman-effect': RamanEffect,
   'threshold-energy': ThresholdEnergy,
+  'del-operator': DelOperator,
+  'coulomb-law': CoulombLaw,
+  'gauss-law': GaussLaw,
+  'dipole-external': DipoleExternal,
+  'biot-savart': BiotSavart,
+  'faraday-law': FaradayLenz,
+  'self-induction': SelfInduction,
+  'displacement-current': DisplacementCurrent,
+  'wave-equation': WaveEquation,
+  'radioactivity': Radioactivity,
+};
+
+// Nav entries that are really aliases of another featured topic's page
+// (e.g. Lenz's law is taught on the same page as Faraday's law).
+const aliasRedirect: Record<string, string> = {
+  'lenz-law': 'faraday-law',
 };
 
 export default function App() {
@@ -44,9 +70,10 @@ export default function App() {
   });
 
   useEffect(() => {
-    if (active !== 'home' && !visited.has(active)) {
+    const key = aliasRedirect[active] ?? active;
+    if (key !== 'home' && !visited.has(key)) {
       const next = new Set(visited);
-      next.add(active);
+      next.add(key);
       setVisited(next);
       try { localStorage.setItem(STORAGE_KEY, JSON.stringify([...next])); } catch { /* ignore */ }
     }
@@ -55,17 +82,18 @@ export default function App() {
   }, [active]);
 
   function select(id: string) {
-    setActive(id);
+    setActive(aliasRedirect[id] ?? id);
   }
 
-  const topicMeta = topics.find(t => t.id === active);
+  const resolvedActive = aliasRedirect[active] ?? active;
+  const topicMeta = topics.find(t => t.id === resolvedActive) ?? topics.find(t => t.id === active);
   const chapterMeta = topicMeta ? chapters.find(c => c.id === topicMeta.chapterId) : null;
 
   let content;
   if (active === 'home') {
     content = <Home onSelect={select} visited={visited} />;
-  } else if (topicMeta?.featured && featuredComponents[active]) {
-    const Comp = featuredComponents[active];
+  } else if (featuredComponents[resolvedActive]) {
+    const Comp = featuredComponents[resolvedActive];
     content = <Comp />;
   } else if (topicMeta) {
     content = (

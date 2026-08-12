@@ -13,9 +13,9 @@ export default function Home({ onSelect, visited }: { onSelect: (id: string) => 
         Electricity, Magnetism, Waves &amp; Modern Physics
       </h1>
       <p style={{ color: 'var(--text-dim)', fontSize: 15, marginBottom: 36, maxWidth: 620 }}>
-        The ten highest-yield derivations across the course, worked step-by-step with interactive visuals and
-        self-check quizzes. Full chapter map below — the highlighted topics (marked with a dot) are built out;
-        the rest are outlined for later.
+        {featured.length} of the highest-yield derivations across the course, worked step-by-step with
+        interactive visuals and self-check quizzes. Full chapter map below — the highlighted topics (marked
+        with a dot) are built out; the rest are outlined for later.
       </p>
 
       <div style={{
