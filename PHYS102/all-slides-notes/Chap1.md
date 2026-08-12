@@ -1,0 +1,770 @@
+# Vector Analysis
+
+## Lecture 01
+
+## Outline
+
+1. Scalars
+2. Vectors
+   - Negative of a vector
+3. Four Vector Operations
+   - Addition of Two Vectors
+   - Multiplication by a Scalar
+   - Dot (or Scalar) Product of Two Vectors
+   - Cross (or Vector) Product of Two Vectors
+4. Vector Algebra: Component Form
+   - Addition of Two Vectors
+   - Multiplication by a Scalar
+   - Dot Product of Two Vectors
+   - Cross Product of Two Vectors
+5. Triple products
+   - Scalar triple product
+   - Vector triple product
+
+## Scalars
+
+Scalars have magnitude only. They are specified by a number with a unit (e.g. $100\,{}^\circ\text{C}$) and obey the rules of arithmetic and ordinary algebra.
+
+Examples: mass, temperature, charge, electric potential, work, energy, etc.
+
+## Vectors
+
+Vectors have both magnitude and direction ($5\,\text{m}$, north) and obey the rules of vector algebra. Examples: displacement, velocity, force, momentum, torque, electric field, magnetic field, etc. In diagrams, a vector is denoted by an arrow: the length of the arrow is proportional to the magnitude of the vector, and the arrowhead indicates its direction. In texts, we shall denote a vector by putting an arrow over the letter ($\vec{A}$, $\vec{B}$, and so on). The magnitude of a vector $\vec{A}$ is written
+
+$$|\vec{A}|$$
+
+or more simply $A$.
+
+### Negative of a vector
+
+Minus $\vec{A}$, i.e. $-\vec{A}$, is a vector with the same magnitude as $\vec{A}$ but of opposite direction (Figure 1).
+
+**Figure 1**
+
+## Four Vector Operations
+
+### Addition of Two Vectors
+
+Place the tail of $\vec{B}$ at the head of $\vec{A}$; the sum, $\vec{A}+\vec{B}$, is the vector from the tail of $\vec{A}$ to the head of $\vec{B}$.
+
+**Figure 2**
+
+**Triangle Law of Vector Addition**
+
+If two sides of a triangle taken in the same order represent the two vectors in magnitude and direction, then the third side in the opposite order represents the resultant of the two vectors.
+
+**Figure 3**
+
+**Parallelogram Law of Vector Addition**
+
+If two vectors are represented in magnitude and direction by the two sides of a parallelogram drawn from a point, then their resultant is given in magnitude and direction by the diagonal of the parallelogram passing through that point.
+
+The resultant is
+
+$$\vec{R}=|\vec{P}+\vec{Q}|=\sqrt{P^2+Q^2+2PQ\cos\theta},\qquad \tan\beta=\frac{Q\sin\theta}{P+Q\cos\theta}$$
+
+Addition is commutative:
+
+$$\vec{A}+\vec{B}=\vec{B}+\vec{A}$$
+
+Addition is associative:
+
+$$(\vec{A}+\vec{B})+\vec{C}=\vec{A}+(\vec{B}+\vec{C})$$
+
+### Multiplication by a Scalar
+
+Multiplication of a vector by a positive scalar $a$ multiplies the magnitude but leaves the direction unchanged. (If $a$ is negative, the direction is reversed.)
+
+**Figure 4**
+
+Scalar multiplication is distributive:
+
+$$a(\vec{A}+\vec{B})=a\vec{A}+a\vec{B}$$
+
+### Dot (or Scalar) Product of Two Vectors
+
+The dot product of two vectors is defined by
+
+$$\vec{A}\cdot\vec{B}\equiv AB\cos\theta \tag{1}$$
+
+and is a scalar. Here $\theta$ is the angle they form when placed tail-to-tail as shown in Figure 5. For example, the work done by a force is $W=\vec{F}\cdot\vec{S}$.
+
+**Figure 5**
+
+The dot product is commutative:
+
+$$\vec{A}\cdot\vec{B}=\vec{B}\cdot\vec{A}$$
+
+The dot product is distributive:
+
+$$\vec{A}\cdot(\vec{B}+\vec{C})=\vec{A}\cdot\vec{B}+\vec{A}\cdot\vec{C}$$
+
+Geometrically, $\vec{A}\cdot\vec{B}$ is the product of $B$ times the projection of $\vec{A}$ along $\vec{B}$:
+
+$$\vec{A}\cdot\vec{B}=B(A\cos\theta)$$
+
+If the two vectors are parallel, then $\vec{A}\cdot\vec{B}=AB$. If two vectors are perpendicular, then $\vec{A}\cdot\vec{B}=0$.
+
+For any vector $\vec{E}$,
+
+$$\vec{E}\cdot\vec{E}=E^2 \quad\Rightarrow\quad E=\sqrt{\vec{E}\cdot\vec{E}}$$
+
+**Example 1:** Let $\vec{C}=\vec{A}-\vec{B}$ (Figure 6), and calculate $\vec{C}\cdot\vec{C}$.
+
+**Solution:**
+
+$$\vec{C}\cdot\vec{C}=(\vec{A}-\vec{B})\cdot(\vec{A}-\vec{B})=\vec{A}\cdot\vec{A}-\vec{A}\cdot\vec{B}-\vec{B}\cdot\vec{A}+\vec{B}\cdot\vec{B}$$
+
+$$\therefore\ C^2=A^2+B^2-2AB\cos\theta$$
+
+**Figure 6**
+
+This is the law of cosines.
+
+### Cross (or Vector) Product of Two Vectors
+
+The cross product of two vectors is defined by
+
+$$\vec{A}\times\vec{B}=AB\sin\theta\,\hat{n} \tag{2}$$
+
+and is a vector, as for example torque: $\vec{\tau}=\vec{r}\times\vec{F}$. Here $\hat{n}$ is a unit vector pointing perpendicular to the plane of $\vec{A}$ and $\vec{B}$. The direction of $\hat{n}$ is determined by using the right-hand rule: let your fingers point in the direction of the first vector and curl around (via the smaller angle) toward the second; then your thumb indicates the direction of $\hat{n}$. In Figure 7, $\vec{A}\times\vec{B}$ points into the page; $\vec{B}\times\vec{A}$ points out of the page.
+
+**Figure 7**
+
+The cross product is not commutative:
+
+$$\vec{A}\times\vec{B}\neq\vec{B}\times\vec{A}$$
+
+The cross product is distributive:
+
+$$\vec{A}\times(\vec{B}+\vec{C})=\vec{A}\times\vec{B}+\vec{A}\times\vec{C}$$
+
+Geometrically, $\vec{A}\times\vec{B}$ gives the area of the parallelogram generated by $\vec{A}$ and $\vec{B}$ (Figure 7).
+
+If the two vectors are parallel, then $\vec{A}\times\vec{B}=0$. If the two vectors are perpendicular, then $|\vec{A}\times\vec{B}|=AB$.
+
+## Vector Algebra: Component Form
+
+Let $\hat{i}$, $\hat{j}$, and $\hat{k}$ be unit vectors parallel to the $x$, $y$, and $z$ axes respectively (Figure 8).
+
+**Figure 8**
+
+Vectors $\vec{A}$ and $\vec{B}$ can be expressed in terms of the basis vectors $\hat{i}$, $\hat{j}$, and $\hat{k}$ as
+
+$$\vec{A}=A_x\hat{i}+A_y\hat{j}+A_z\hat{k} \qquad \text{and} \qquad \vec{B}=B_x\hat{i}+B_y\hat{j}+B_z\hat{k}$$
+
+### Addition of Two Vectors
+
+$$\vec{A}+\vec{B}=(A_x+B_x)\hat{i}+(A_y+B_y)\hat{j}+(A_z+B_z)\hat{k}$$
+
+### Multiplication by a Scalar
+
+$$a\vec{A}=(aA_x)\hat{i}+(aA_y)\hat{j}+(aA_z)\hat{k}$$
+
+### Dot Product of Two Vectors
+
+$$\vec{A}\cdot\vec{B}=(A_x\hat{i}+A_y\hat{j}+A_z\hat{k})\cdot(B_x\hat{i}+B_y\hat{j}+B_z\hat{k})=A_xB_x+A_yB_y+A_zB_z$$
+
+Since $\hat{i}\cdot\hat{i}=\hat{j}\cdot\hat{j}=\hat{k}\cdot\hat{k}=1$ and $\hat{i}\cdot\hat{j}=\hat{j}\cdot\hat{k}=\hat{k}\cdot\hat{i}=0$. For any vector $\vec{A}$:
+
+$$A=\sqrt{\vec{A}\cdot\vec{A}}=\sqrt{A_x^2+A_y^2+A_z^2}$$
+
+### Cross Product of Two Vectors
+
+$$\vec{A}\times\vec{B}=(A_x\hat{i}+A_y\hat{j}+A_z\hat{k})\times(B_x\hat{i}+B_y\hat{j}+B_z\hat{k})$$
+
+$$=(A_yB_z-A_zB_y)\hat{i}+(A_zB_x-A_xB_z)\hat{j}+(A_xB_y-A_yB_x)\hat{k}$$
+
+$$=\begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ A_x & A_y & A_z \\ B_x & B_y & B_z \end{vmatrix}$$
+
+Since,
+
+$$\hat{i}\times\hat{i}=\hat{j}\times\hat{j}=\hat{k}\times\hat{k}=0$$
+
+$$\hat{i}\times\hat{j}=\hat{k},\qquad \hat{j}\times\hat{k}=\hat{i},\qquad \hat{k}\times\hat{i}=\hat{j}$$
+
+$$\hat{j}\times\hat{i}=-\hat{k},\qquad \hat{k}\times\hat{j}=-\hat{i},\qquad \hat{i}\times\hat{k}=-\hat{j}$$
+
+## Triple products
+
+### Scalar triple product
+
+The scalar triple product of three vectors $\vec{A}$, $\vec{B}$ and $\vec{C}$ is defined as $\vec{A}\cdot(\vec{B}\times\vec{C})$.
+
+For a parallelepiped generated by $\vec{A}$, $\vec{B}$ and $\vec{C}$:
+
+$$\vec{A}\cdot(\vec{B}\times\vec{C})=|\vec{B}\times\vec{C}|(A\cos\theta)$$
+
+$$=\text{Area of the base of the parallelepiped}\times\text{Altitude of the parallelepiped}$$
+
+$$=\text{Volume of the parallelepiped generated by }\vec{A},\ \vec{B}\ \text{and}\ \vec{C}$$
+
+So, geometrically, $\vec{A}\cdot(\vec{B}\times\vec{C})$ is the volume of the parallelepiped generated by $\vec{A}$, $\vec{B}$ and $\vec{C}$.
+
+$$\vec{A}\cdot(\vec{B}\times\vec{C})=\vec{B}\cdot(\vec{C}\times\vec{A})=\vec{C}\cdot(\vec{A}\times\vec{B})$$
+
+In component form,
+
+$$\vec{A}\cdot(\vec{B}\times\vec{C})=\begin{vmatrix} A_x & A_y & A_z \\ B_x & B_y & B_z \\ C_x & C_y & C_z \end{vmatrix}$$
+
+The dot and cross can be interchanged:
+
+$$\vec{A}\cdot(\vec{B}\times\vec{C})=(\vec{A}\times\vec{B})\cdot\vec{C}$$
+
+### Vector triple product
+
+The vector triple product of three vectors $\vec{A}$, $\vec{B}$ and $\vec{C}$ is defined as $\vec{A}\times(\vec{B}\times\vec{C})$.
+
+The vector triple product can be simplified by the BAC-CAB rule:
+
+$$\vec{A}\times(\vec{B}\times\vec{C})=\vec{B}(\vec{A}\cdot\vec{C})-\vec{C}(\vec{A}\cdot\vec{B})$$
+
+## Lecture 02: Vector Analysis (Contd.)
+
+## Outline
+
+1. Position, Displacement, and Separation Vectors
+   - Position Vector
+   - Infinitesimal Displacement Vector
+   - Separation Vector
+2. The Operator $\nabla$
+3. Gradient
+   - Geometrical Interpretation of the Gradient
+4. The Divergence
+   - Geometrical Interpretation of divergence
+5. The Curl
+   - Geometrical Interpretation of curl
+6. Product rules for gradient, divergence and curl
+
+## Position, Displacement, and Separation Vectors
+
+### Position Vector
+
+The location of a point in three dimensions can be described by listing its Cartesian coordinates $(x,y,z)$.
+
+**Position Vector:** It is given by
+
+$$\vec{r}=x\hat{i}+y\hat{j}+z\hat{k}$$
+
+with magnitude
+
+$$r=\sqrt{x^2+y^2+z^2}=(x^2+y^2+z^2)^{1/2}$$
+
+The unit vector of it is
+
+$$\hat{r}=\frac{\vec{r}}{r}=\frac{x\hat{i}+y\hat{j}+z\hat{k}}{\sqrt{x^2+y^2+z^2}}$$
+
+### Infinitesimal Displacement Vector
+
+The infinitesimal displacement vector, from $(x,y,z)$ to $(x+dx,\ y+dy,\ z+dz)$, is
+
+$$d\vec{l}=dx\,\hat{i}+dy\,\hat{j}+dz\,\hat{k}$$
+
+### Separation Vector
+
+In electrodynamics we frequently encounter problems involving two points — typically, a source point $\vec{r}'$, where an electric charge is located, and a field point $\vec{r}$, at which we are calculating the electric or magnetic field (Figure 1).
+
+**Figure 1**
+
+The separation vector from the source point to the field point is
+
+$$\vec{\mathcal{r}}=(\vec{r}-\vec{r}')=(x-x')\hat{i}+(y-y')\hat{j}+(z-z')\hat{k}$$
+
+The unit vector of the separation vector is given by
+
+$$\hat{\mathcal{r}}=\frac{\vec{\mathcal{r}}}{\mathcal{r}}=\frac{(x-x')\hat{i}+(y-y')\hat{j}+(z-z')\hat{k}}{\sqrt{(x-x')^2+(y-y')^2+(z-z')^2}}$$
+
+## The Operator $\nabla$
+
+The vector differential operator del (nabla), defined in Cartesian coordinates as
+
+$$\nabla=\hat{i}\frac{\partial}{\partial x}+\hat{j}\frac{\partial}{\partial y}+\hat{k}\frac{\partial}{\partial z}$$
+
+Of course, del is not a vector, in the usual sense. Indeed, it is without specific meaning until we provide it with a function to act upon.
+
+There are three ways the operator $\nabla$ can act:
+
+1. On a scalar function $T$: $\nabla T$ (the gradient);
+2. On a vector function $\vec{v}$, via the dot product: $\nabla\cdot\vec{v}$ (the divergence);
+3. On a vector function $\vec{v}$, via the cross product: $\nabla\times\vec{v}$ (the curl).
+
+## Gradient
+
+Suppose that we have a function of three variables — say, the temperature $T(x,y,z)$ in a room. A theorem on partial derivatives states that
+
+$$dT=\left(\frac{\partial T}{\partial x}\right)dx+\left(\frac{\partial T}{\partial y}\right)dy+\left(\frac{\partial T}{\partial z}\right)dz \tag{1}$$
+
+This tells us how $T$ changes when we alter all three variables by the infinitesimal amounts $dx$, $dy$, $dz$.
+
+Equation (1) can be written as
+
+$$dT=\left(\frac{\partial T}{\partial x}\hat{i}+\frac{\partial T}{\partial y}\hat{j}+\frac{\partial T}{\partial z}\hat{k}\right)\cdot(dx\,\hat{i}+dy\,\hat{j}+dz\,\hat{k})=(\nabla T)\cdot d\vec{l}$$
+
+where
+
+$$\nabla T=\frac{\partial T}{\partial x}\hat{i}+\frac{\partial T}{\partial y}\hat{j}+\frac{\partial T}{\partial z}\hat{k}$$
+
+is the gradient of $T$.
+
+### Geometrical Interpretation of the Gradient
+
+$$dT=(\nabla T)\cdot d\vec{l}=|\nabla T|\,|d\vec{l}|\cos\theta$$
+
+where $\theta$ is the angle between $\nabla T$ and $d\vec{l}$.
+
+Now, if we fix the magnitude $|d\vec{l}|$ and search around in various directions, the maximum change in $T$ evidently occurs when $\theta=0$, for then $\cos\theta=1$. That is, for a fixed distance $|d\vec{l}|$, $dT$ is greatest when we move in the same direction as $\nabla T$. Thus:
+
+The gradient $\nabla T$ points in the direction of maximum increase of the function $T$.
+
+Moreover:
+
+The magnitude $|\nabla T|$ gives the slope (rate of increase) along this maximal direction.
+
+**Example 1:** Suppose that the temperature $T$ at the point $(x,y,z)$ is given by the equation $T=x^2-y^2+xyz+273$. In which direction is the temperature increasing most rapidly at $(-1,2,3)$ and at what rate?
+
+**Solution:**
+
+Here, $T=x^2-y^2+xyz+273$.
+
+$$\nabla T=\frac{\partial}{\partial x}(x^2-y^2+xyz+273)\,\hat{i}+\frac{\partial}{\partial y}(x^2-y^2+xyz+273)\,\hat{j}+\frac{\partial}{\partial z}(x^2-y^2+xyz+273)\,\hat{k}$$
+
+$$=(2x+yz)\hat{i}+(-2y+xz)\hat{j}+(xy)\hat{k}$$
+
+$$=4\hat{i}-7\hat{j}-2\hat{k}\quad \text{at }(-1,2,3)$$
+
+The increase in temperature is fastest in the direction of this vector. The rate of increase is
+
+$$|\nabla T|=\sqrt{(4)^2+(-7)^2+(-2)^2}=\sqrt{69}$$
+
+**Note: Gravitational Potential Energy near the Earth**
+
+$$U=mgz$$
+
+where $z$ is the height from some arbitrary reference level.
+
+$$\nabla U=\frac{\partial}{\partial x}(mgz)\,\hat{i}+\frac{\partial}{\partial y}(mgz)\,\hat{j}+\frac{\partial}{\partial z}(mgz)\,\hat{k}=mg\hat{k}$$
+
+Gravitational force, $\vec{F}=-mg\hat{k}=-\nabla U$. So, the maximum change in gravitational potential energy is vertically upwards from the centre of the Earth.
+
+**Gradient of a scalar field $T$**
+
+$$\nabla T=\frac{\partial T}{\partial x}\hat{i}+\frac{\partial T}{\partial y}\hat{j}+\frac{\partial T}{\partial z}\hat{k}$$
+
+- $\nabla$ turns a scalar field into a vector field.
+- $\nabla T$ points in the direction of maximum increase of $T$.
+- $|\nabla T|$ is the rate of maximum increase.
+
+## The Divergence
+
+The divergence of a vector $\vec{F}$, written $\mathrm{div}\,\vec{F}$ or $\nabla\cdot\vec{F}$, is defined as follows: The divergence of a vector is the limit of its surface integral per unit volume as the volume enclosed by the surface goes to zero. That is,
+
+$$\mathrm{div}\,\vec{F}=\nabla\cdot\vec{F}=\lim_{V\to 0}\frac{1}{V}\oint_S \vec{F}\cdot d\vec{a}$$
+
+The divergence is clearly a scalar point function (scalar field), and it is defined at the limit point of the surface integration.
+
+In Cartesian coordinates it can be expressed as
+
+$$\nabla\cdot\vec{F}=\left(\hat{i}\frac{\partial}{\partial x}+\hat{j}\frac{\partial}{\partial y}+\hat{k}\frac{\partial}{\partial z}\right)\cdot(F_x\hat{i}+F_y\hat{j}+F_z\hat{k})=\frac{\partial F_x}{\partial x}+\frac{\partial F_y}{\partial y}+\frac{\partial F_z}{\partial z}$$
+
+### Geometrical Interpretation of divergence
+
+The divergence of a vector function $\vec{v}$, i.e. $\nabla\cdot\vec{v}$, is a measure of how much the vector $\vec{v}$ spreads out (diverges) from the point in question.
+
+For example, the vector function in Figure 2 has a large positive divergence.
+
+**Figure 2**
+
+The vector function in Figure 3 has zero divergence.
+
+**Figure 3**
+
+Imagine you are standing at the edge of a pond. Sprinkle some sawdust or pine needles on the surface. If the material spreads out, then you dropped it at a point of positive divergence; if it collects together, you dropped it at a point of negative divergence. (The vector function $\vec{v}$ in this model is the velocity of water.)
+
+A point of positive divergence is a source, or "faucet"; a point of negative divergence is a sink, or "drain".
+
+If at some point $P$:
+
+- $\nabla\cdot\vec{v}>0$, then $\vec{v}$ has a source at $P$;
+- $\nabla\cdot\vec{v}<0$, then $\vec{v}$ has a sink at $P$;
+- $\nabla\cdot\vec{v}=0$, then $\vec{v}$ is said to be solenoidal.
+
+**Example 1:** Calculate the divergence of the vector function $\vec{v}=x\hat{i}+y\hat{j}+z\hat{k}$.
+
+**Solution:**
+
+$$\nabla\cdot\vec{v}=\frac{\partial}{\partial x}(x)+\frac{\partial}{\partial y}(y)+\frac{\partial}{\partial z}(z)=1+1+1=3$$
+
+**Example 2:** If $\vec{A}=x^2z\,\hat{i}-2y^3z^2\,\hat{j}+xy^2z\,\hat{k}$, find $\nabla\cdot\vec{A}$ at the point $(1,-1,1)$.
+
+**Solution:**
+
+$$\nabla\cdot\vec{A}=\frac{\partial}{\partial x}(x^2z)+\frac{\partial}{\partial y}(-2y^3z^2)+\frac{\partial}{\partial z}(xy^2z)=2xz-6y^2z^2+xy^2$$
+
+At $(1,-1,1)$:
+
+$$=2(1)(1)-6(-1)^2(1)^2+(1)(-1)^2=2-6+1=-3$$
+
+## The Curl
+
+The curl of a vector function $\vec{F}$ is written as $\mathrm{curl}\,\vec{F}$ or $\nabla\times\vec{F}$ and defined as follows. The component of $\mathrm{curl}\,\vec{F}$ in the direction of the unit vector $\hat{n}$ is the limit of a line integral per unit area, as the enclosed area goes to zero, this area being perpendicular to $\hat{n}$. That is,
+
+$$\hat{n}\cdot\mathrm{curl}\,\vec{F}=\hat{n}\cdot(\nabla\times\vec{F})=\lim_{S\to 0}\frac{1}{S}\oint_C \vec{F}\cdot d\vec{l}$$
+
+where the curve $C$, which bounds the surface $S$, is in a plane normal to $\hat{n}$.
+
+In Cartesian coordinates, the curl of a vector function $\vec{v}$ can be expressed as:
+
+$$\mathrm{curl}\,\vec{v}=\nabla\times\vec{v}=\left(\hat{i}\frac{\partial}{\partial x}+\hat{j}\frac{\partial}{\partial y}+\hat{k}\frac{\partial}{\partial z}\right)\times(v_x\hat{i}+v_y\hat{j}+v_z\hat{k})$$
+
+$$=\hat{i}\left(\frac{\partial v_z}{\partial y}-\frac{\partial v_y}{\partial z}\right)+\hat{j}\left(\frac{\partial v_x}{\partial z}-\frac{\partial v_z}{\partial x}\right)+\hat{k}\left(\frac{\partial v_y}{\partial x}-\frac{\partial v_x}{\partial y}\right)$$
+
+### Geometrical Interpretation of curl
+
+The curl of a vector function $\vec{v}$, $\nabla\times\vec{v}$, is a measure of how much the vector $\vec{v}$ "curls around" the point in question.
+
+For example, the vector function in Figure 4 has a substantial curl, pointing in the z-direction, as the natural right-hand rule would suggest.
+
+**Figure 4**
+
+Imagine you are standing at the edge of a pond. Float a small paddle-wheel (a cork with toothpicks pointing out radially would do); if it starts to rotate, then you placed it at a point of nonzero curl. (The vector function $\vec{v}$ in this model is the velocity of water.)
+
+A whirlpool would be a region of large curl. If $\nabla\times\vec{v}=0$, then $\vec{v}$ is irrotational.
+
+**Example 1:** Calculate the curl of the vector function $\vec{v}=x\hat{j}-y\hat{i}$.
+
+**Solution:**
+
+$$\nabla\times\vec{v}=\nabla\times[x\hat{j}-y\hat{i}]=\begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\[2pt] \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\[2pt] -y & x & 0 \end{vmatrix}$$
+
+$$=\hat{i}\left(\frac{\partial(0)}{\partial y}-\frac{\partial(x)}{\partial z}\right)-\hat{j}\left(\frac{\partial(0)}{\partial x}-\frac{\partial(-y)}{\partial z}\right)+\hat{k}\left(\frac{\partial(x)}{\partial x}-\frac{\partial(-y)}{\partial y}\right)$$
+
+$$=\hat{i}[0]-\hat{j}[0-0]+\hat{k}[1-(-1)]=2\hat{k}$$
+
+**Example 2:** If $\vec{A}=xz^3\hat{i}-2x^2yz\,\hat{j}+2yz^4\hat{k}$, find $\nabla\times\vec{A}$ at the point $(1,-1,1)$.
+
+**Solution:**
+
+$$\nabla\times\vec{A}=\begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\[2pt] \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\[2pt] xz^3 & -2x^2yz & 2yz^4 \end{vmatrix}$$
+
+$$=\hat{i}\left(\frac{\partial(2yz^4)}{\partial y}-\frac{\partial(-2x^2yz)}{\partial z}\right)-\hat{j}\left(\frac{\partial(2yz^4)}{\partial x}-\frac{\partial(xz^3)}{\partial z}\right)+\hat{k}\left(\frac{\partial(-2x^2yz)}{\partial x}-\frac{\partial(xz^3)}{\partial y}\right)$$
+
+$$=\hat{i}[2z^4+2x^2y]-\hat{j}[0-3xz^2]+\hat{k}[-4xyz-0]=[2z^4+2x^2y]\hat{i}+3xz^2\hat{j}-4xyz\,\hat{k}$$
+
+At $(1,-1,1)$:
+
+$$=[2(1)^4+2(1)^2(-1)]\hat{i}+3(1)(1)^2\hat{j}-4(1)(-1)(1)\hat{k}=3\hat{j}+4\hat{k}$$
+
+## Product rules for gradient, divergence and curl
+
+There are six product rules as shown in Eqs. (2) to (7), two for gradients:
+
+$$\nabla(fg)=f\nabla g+g\nabla f \tag{2}$$
+
+$$\nabla(\vec{A}\cdot\vec{B})=\vec{A}\times(\nabla\times\vec{B})+\vec{B}\times(\nabla\times\vec{A})+(\vec{A}\cdot\nabla)\vec{B}+(\vec{B}\cdot\nabla)\vec{A} \tag{3}$$
+
+two for divergences:
+
+$$\nabla\cdot(f\vec{A})=f(\nabla\cdot\vec{A})+\vec{A}\cdot(\nabla f) \tag{4}$$
+
+$$\nabla\cdot(\vec{A}\times\vec{B})=\vec{B}\cdot(\nabla\times\vec{A})-\vec{A}\cdot(\nabla\times\vec{B}) \tag{5}$$
+
+two for curls:
+
+$$\nabla\times(f\vec{A})=f(\nabla\times\vec{A})-\vec{A}\times(\nabla f) \tag{6}$$
+
+$$\nabla\times(\vec{A}\times\vec{B})=(\vec{B}\cdot\nabla)\vec{A}-(\vec{A}\cdot\nabla)\vec{B}+\vec{A}(\nabla\cdot\vec{B})-\vec{B}(\nabla\cdot\vec{A}) \tag{7}$$
+
+## Lecture 03: Vector Analysis (Contd.)
+
+## Outline
+
+1. Second derivatives
+   - Laplacian
+2. Integral Calculus
+   - Line Integrals
+   - Surface Integrals
+   - Volume Integrals
+3. The Fundamental Theorem of Calculus
+   - The Fundamental Theorem for Gradients
+   - The Fundamental Theorem for Divergences [Gauss's Theorem]
+   - The Fundamental Theorem for Curls [Stoke's Theorem]
+4. Spherical Polar Coordinates
+5. Miscellaneous
+6. Problems
+
+## Second derivatives
+
+By applying $\nabla$ twice we can construct five species of second derivatives.
+
+The gradient $\nabla T$ is a vector:
+
+1. Divergence of gradient: $\nabla\cdot(\nabla T)$ → a scalar
+2. Curl of gradient: $\nabla\times(\nabla T)$ → a vector
+
+The divergence $\nabla\cdot\vec{v}$ is a scalar:
+
+3. Gradient of divergence: $\nabla(\nabla\cdot\vec{v})$ → a vector
+
+The curl $\nabla\times\vec{v}$ is a vector:
+
+4. Divergence of curl: $\nabla\cdot(\nabla\times\vec{v})$ → a scalar
+5. Curl of curl: $\nabla\times(\nabla\times\vec{v})$ → a vector
+
+### Laplacian
+
+Laplacian Operator: $\nabla\cdot\nabla=\nabla^2$.
+
+The Laplacian of a scalar $T$ is a scalar:
+
+$$\nabla\cdot(\nabla T)=\nabla^2T=\frac{\partial^2T}{\partial x^2}+\frac{\partial^2T}{\partial y^2}+\frac{\partial^2T}{\partial z^2}$$
+
+The Laplacian of a vector $\vec{v}$ is a vector:
+
+$$\nabla^2\vec{v}=(\nabla^2v_x)\hat{i}+(\nabla^2v_y)\hat{j}+(\nabla^2v_z)\hat{k}$$
+
+The Laplacian of $\vec{v}$: $\nabla^2\vec{v}=(\nabla\cdot\nabla)\vec{v}\ \neq\ \nabla(\nabla\cdot\vec{v})$.
+
+## Integral Calculus
+
+### Line Integrals
+
+If $\vec{F}$ is a vector, a line integral of $\vec{F}$ is written as
+
+$$\int_a^b \vec{F}\cdot d\vec{l}$$
+
+where $L$ is the curve along which the integration is performed, $a$ and $b$ are the initial and final points on the curve, and $d\vec{l}$ is the infinitesimal displacement vector along the curve $L$.
+
+The line integral is a scalar. The line integral over a closed curve is given by $\oint \vec{F}\cdot d\vec{l}$.
+
+Example of a line integral: The work done by a force $\vec{F}$: $W=\oint \vec{F}\cdot d\vec{l}$.
+
+For a conservative force: $\oint \vec{F}\cdot d\vec{l}=0$.
+
+### Surface Integrals
+
+If $\vec{F}$ is a vector, a surface integral of $\vec{F}$ is written as
+
+$$\int_S \vec{F}\cdot d\vec{a}$$
+
+where $S$ is the surface over which the integration is to be performed, and $d\vec{a}$ is an infinitesimal patch of area, with direction perpendicular to the surface.
+
+Example: The flux of $\vec{E}$ through a surface $S$: $\Phi_E=\oint_S \vec{E}\cdot d\vec{a}$.
+
+Surface integral over a closed surface:
+
+$$\oint_S \vec{F}\cdot d\vec{a}$$
+
+If $\vec{v}$ describes the flow of a fluid (mass per unit area per unit time), then $\oint \vec{v}\cdot d\vec{a}$ represents the total mass per unit time passing through the surface [or flux].
+
+### Volume Integrals
+
+A volume integral is an expression of the form
+
+$$\int_V T\,d\tau$$
+
+where $T$ is a scalar function and $d\tau$ is an infinitesimal volume element.
+
+Total charge $q$:
+
+$$q=\int_V \rho\,d\tau$$
+
+where $\rho$ is the volume charge density.
+
+## The Fundamental Theorem of Calculus
+
+Suppose $f(x)$ is a function of one variable. The fundamental theorem of calculus states:
+
+$$\int_a^b \frac{df}{dx}\,dx=f(b)-f(a) \tag{1}$$
+
+**Figure 1**
+
+Here, $\frac{df}{dx}\,dx$ is the infinitesimal change in $f$ when you go from $(x)$ to $(x+dx)$.
+
+The fundamental theorem (1) says that there are two ways to determine the total change in the function: either subtract the values at the ends or go step-by-step, adding up all the tiny increments as you go. You'll get the same answer either way.
+
+### The Fundamental Theorem for Gradients
+
+Suppose we have a scalar function of three variables $f(x,y,z)$. The total change in $f$ in going from $a$ to $b$ is
+
+$$\int_a^b (\nabla f)\cdot d\vec{l}=f(b)-f(a)$$
+
+**Geometrical Interpretation:**
+
+Suppose you want to determine the height of the Eiffel Tower. You could climb the stairs, using a ruler to measure the rise at each step, and adding them all up, or you could place altimeters at the top and the bottom, and subtract the two readings; you should get the same answer either way (that's the fundamental theorem).
+
+Corollary 1: $\int_a^b (\nabla f)\cdot d\vec{l}$ is independent of the path taken from $a$ to $b$.
+
+Corollary 2: $\oint (\nabla f)\cdot d\vec{l}=0$.
+
+### The Fundamental Theorem for Divergences [Gauss's Theorem]
+
+The fundamental theorem for divergences states that: "The volume integral of the divergence of a vector is equal to the surface integral of the vector over the closed surface which bounds the volume."
+
+$$\int_V (\nabla\cdot\vec{v})\,d\tau=\oint_S \vec{v}\cdot d\vec{a} \tag{2}$$
+
+**Geometrical Interpretation:**
+
+If $\vec{v}$ represents the flow of an incompressible fluid, then the flux of $\vec{v}$ (the right side of Eq. (2)) is the total amount of fluid passing out through the surface, per unit time. Now, the divergence measures the "spreading out" of the vectors from a point — a place of high divergence is like a "faucet," pouring out liquid. If we have lots of faucets in a region filled with incompressible fluid, an equal amount of liquid will be forced out through the boundaries of the region.
+
+### The Fundamental Theorem for Curls [Stoke's Theorem]
+
+The fundamental theorem for curls states that: "The surface integral of the curl of a vector over a surface is equal to the line integral of the vector along the closed loop which bounds the surface."
+
+$$\int_S (\nabla\times\vec{v})\cdot d\vec{a}=\oint_C \vec{v}\cdot d\vec{l} \tag{3}$$
+
+**Geometrical Interpretation:**
+
+The curl measures the "twist" of the vectors $\vec{v}$; a region of high curl is a whirlpool — if you put a tiny paddle wheel there, it will rotate. Now, the integral of the curl over some surface represents the "total amount of swirl," and we can determine that swirl just as well by going around the edge and finding how much the flow is following the boundary (Figure F-B).
+
+You may find this a rather forced interpretation of Stokes' theorem, but it's a helpful mnemonic, if nothing else.
+
+For a closed surface, $d\vec{a}$ points in the direction of the outward normal; but for an open surface, the direction of $d\vec{a}$ is given by the right-hand rule: if your fingers point in the direction of the line integral, then your thumb fixes the direction of $d\vec{a}$ (Figure F-C).
+
+Corollary 1: $\oint (\nabla\times\vec{v})\cdot d\vec{a}$ depends only on the boundary line, not on the particular surface used.
+
+Corollary 2: $\oint (\nabla\times\vec{v})\cdot d\vec{a}=0$ for any closed surface, since the boundary line, like the mouth of a balloon, shrinks down to a point, and hence the right side of Eq. (3) vanishes.
+
+## Spherical Polar Coordinates
+
+The spherical polar coordinates $(r,\theta,\phi)$ of a point are defined in Figure S-A:
+
+- $r$ → the distance from the origin (the magnitude of the position vector);
+- $\theta$ → the polar angle (the angle down from the axis);
+- $\phi$ → the azimuthal angle (the angle around from the axis).
+
+Figure S-A also shows unit vectors $\hat{r}$, $\hat{\theta}$, $\hat{\phi}$ pointing in the direction of increase of the corresponding coordinates. They constitute an orthogonal basis set just like $(\hat{i},\hat{j},\hat{k})$.
+
+For a vector $\vec{A}$:
+
+$$\vec{A}=A_r\hat{r}+A_\theta\hat{\theta}+A_\phi\hat{\phi}$$
+
+where $A_r$, $A_\theta$, and $A_\phi$ are the radial, polar and azimuthal components of $\vec{A}$.
+
+**Example:** Find the volume of a sphere of radius $R$.
+
+**Solution:**
+
+$$V=\int d\tau=\int r^2\sin\theta\,dr\,d\theta\,d\phi$$
+
+$$=\left(\int_0^R r^2\,dr\right)\left(\int_0^\pi \sin\theta\,d\theta\right)\left(\int_0^{2\pi} d\phi\right)=\left(\frac{R^3}{3}\right)(2)(2\pi)=\frac{4}{3}\pi R^3$$
+
+## Miscellaneous
+
+**1. The curl of the gradient of a scalar is always zero**, i.e.
+
+$$\nabla\times(\nabla T)=0$$
+
+**Proof:** Let $T$ be a scalar function, then
+
+$$\nabla\times(\nabla T)=\begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\[2pt] \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\[2pt] \frac{\partial T}{\partial x} & \frac{\partial T}{\partial y} & \frac{\partial T}{\partial z} \end{vmatrix}$$
+
+$$=\hat{i}\left(\frac{\partial^2T}{\partial y\partial z}-\frac{\partial^2T}{\partial z\partial y}\right)-\hat{j}\left(\frac{\partial^2T}{\partial x\partial z}-\frac{\partial^2T}{\partial z\partial x}\right)+\hat{k}\left(\frac{\partial^2T}{\partial x\partial y}-\frac{\partial^2T}{\partial y\partial x}\right)=0$$
+
+since the mixed partial derivatives are equal, e.g. $\dfrac{\partial^2T}{\partial y\partial z}=\dfrac{\partial^2T}{\partial z\partial y}$.
+
+If the curl of a vector field ($\vec{F}$) vanishes (everywhere), then $\vec{F}$ can be written as the gradient of a scalar function, i.e.
+
+$$\nabla\times\vec{F}=0 \quad\Leftrightarrow\quad \vec{F}=\nabla V$$
+
+For the curl-less (or "irrotational") fields, the following conditions are equivalent:
+
+- $\vec{F}\cdot d\vec{l}$ is independent of path, for any given end points.
+- $\oint_a^b \vec{F}\cdot d\vec{l}=0$ for any closed loop.
+- $\nabla\times\vec{F}=0$ everywhere.
+- $\vec{F}$ is the gradient of some scalar function, $\vec{F}=\nabla V$.
+
+**2. The divergence of the curl of a vector is always zero**, i.e.
+
+$$\nabla\cdot(\nabla\times\vec{v})=0$$
+
+**Proof:** Let $\vec{v}$ be a vector, then
+
+$$\nabla\times\vec{v}=\begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\[2pt] \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\[2pt] v_x & v_y & v_z \end{vmatrix}$$
+
+$$=\hat{i}\left(\frac{\partial v_z}{\partial y}-\frac{\partial v_y}{\partial z}\right)+\hat{j}\left(\frac{\partial v_x}{\partial z}-\frac{\partial v_z}{\partial x}\right)+\hat{k}\left(\frac{\partial v_y}{\partial x}-\frac{\partial v_x}{\partial y}\right)$$
+
+$$\therefore\ \nabla\cdot(\nabla\times\vec{v})=\frac{\partial}{\partial x}\left(\frac{\partial v_z}{\partial y}-\frac{\partial v_y}{\partial z}\right)-\frac{\partial}{\partial y}\left(\frac{\partial v_z}{\partial x}-\frac{\partial v_x}{\partial z}\right)+\frac{\partial}{\partial z}\left(\frac{\partial v_y}{\partial x}-\frac{\partial v_x}{\partial y}\right)$$
+
+$$=\left(\frac{\partial^2v_z}{\partial x\partial y}-\frac{\partial^2v_y}{\partial x\partial z}\right)-\left(\frac{\partial^2v_z}{\partial y\partial x}-\frac{\partial^2v_x}{\partial y\partial z}\right)+\left(\frac{\partial^2v_y}{\partial z\partial x}-\frac{\partial^2v_x}{\partial z\partial y}\right)=0$$
+
+since the mixed partial derivatives are equal.
+
+If the divergence of a vector field ($\vec{F}$) vanishes (everywhere), then $\vec{F}$ can be expressed as the curl of another vector field:
+
+$$\nabla\cdot\vec{F}=0 \quad\Leftrightarrow\quad \vec{F}=\nabla\times\vec{A}$$
+
+For the divergence-less (or "solenoidal") fields, the following conditions are equivalent:
+
+- $\nabla\cdot\vec{F}=0$ everywhere.
+- $\oint \vec{F}\cdot d\vec{a}$ is independent of surface, for any given boundary line.
+- $\oint \vec{F}\cdot d\vec{a}=0$ for any closed surface.
+- $\vec{F}$ is the curl of some vector, $\vec{F}=\nabla\times\vec{A}$.
+
+In all cases (whatever its curl and divergence may be) a vector field $\vec{F}$ can be written as the gradient of a scalar plus the curl of a vector.
+
+$$\vec{F}=\nabla V+\nabla\times\vec{A} \quad \text{(always)}$$
+
+## Problems
+
+1. Find the gradients of the following functions:
+   1. $f(x,y,z)=x^2+y^2+z^2$
+   2. $f(x,y,z)=e^x\ln(y)\sin(z)$
+2. If $\phi(x,y,z)=3x^2y-y^3z^2$, find $\nabla\phi$ at $(1,-2,-1)$.
+3. Let $\vec{r}=x\hat{i}+y\hat{j}+z\hat{k}$ be the position vector and let $r$ be its length.
+   - Show that
+
+     $$\nabla\left(\frac{1}{r}\right)=-\frac{\hat{r}}{r^2}=-\frac{\vec{r}}{r^3}$$
+
+     **Hint:**
+
+     $$\nabla\left(\frac{1}{r}\right)=\hat{i}\frac{\partial r^{-1}}{\partial x}+\hat{j}\frac{\partial r^{-1}}{\partial y}+\hat{k}\frac{\partial r^{-1}}{\partial z}$$
+
+     But,
+
+     $$\frac{\partial r^{-1}}{\partial x}=\frac{\partial r^{-1}}{\partial r}\frac{\partial r}{\partial x}=-r^{-2}\cdot\frac{1}{2}(x^2+y^2+z^2)^{-1/2}(2x)=-\frac{x}{r^3}$$
+
+     Similarly,
+
+     $$\frac{\partial r^{-1}}{\partial y}=-\frac{y}{r^3} \qquad \text{and} \qquad \frac{\partial r^{-1}}{\partial z}=-\frac{z}{r^3}$$
+
+     therefore
+
+     $$\nabla\left(\frac{1}{r}\right)=-\hat{i}\frac{x}{r^3}-\hat{j}\frac{y}{r^3}-\hat{k}\frac{z}{r^3}=-\frac{x\hat{i}+y\hat{j}+z\hat{k}}{r^3}=-\frac{\vec{r}}{r^3}=-\frac{\hat{r}}{r^2}$$
+
+   - Show that
+
+     $$\nabla r^n=nr^{n-2}\vec{r}=nr^{n-1}\hat{r}$$
+
+     **Hint:**
+
+     $$\nabla(r^n)=\hat{i}\frac{\partial r^n}{\partial x}+\hat{j}\frac{\partial r^n}{\partial y}+\hat{k}\frac{\partial r^n}{\partial z}$$
+
+     But,
+
+     $$\frac{\partial r^n}{\partial x}=nr^{n-1}\frac{\partial r}{\partial x}=nr^{n-1}\frac{x}{r}=nr^{n-2}x$$
+
+     Similarly,
+
+     $$\frac{\partial r^n}{\partial y}=nr^{n-2}y \qquad \text{and} \qquad \frac{\partial r^n}{\partial z}=nr^{n-2}z$$
+
+     Hence,
+
+     $$\nabla(r^n)=nr^{n-2}(\hat{i}x+\hat{j}y+\hat{k}z)=nr^{n-2}\vec{r}=nr^{n-1}\hat{r}$$
+
+4. Calculate the divergence of the following vector functions:
+   1. $\vec{v}_a=x^2\hat{i}+3xz^2\hat{j}-2xz\hat{k}$
+   2. $\vec{v}_c=y^2\hat{i}+(2xy+z^2)\hat{j}+2yz\hat{k}$
+5. If $\vec{A}=x^2z\hat{i}-2y^3z^2\hat{j}+xy^2z\hat{k}$, find $\nabla\cdot\vec{A}$ at the point $(1,-2,1)$.
+6. Show that $\vec{A}=3y^4z^2\hat{i}+4x^3z^2\hat{j}-3x^2y^2\hat{k}$ is solenoidal.
+7. Calculate the curl of the following vector functions:
+   1. $\vec{v}_a=-y\hat{i}+x\hat{j}$
+   2. $\vec{v}_b=x^2y\hat{i}+(x-y)\hat{k}$
+8. If $\vec{A}=xz^3\hat{i}-2x^2yz\hat{j}+2yz^4\hat{k}$, then find $\nabla\times\vec{A}$ at the point $(1,-1,1)$.
+9. Calculate the Laplacian of the following functions:
+   1. $T=\sin x\sin y\sin z$
+   2. $T=e^{-5x}\sin 4y\cos 3z$
+   3. $\vec{v}=x^2\hat{i}+3xz^2\hat{j}-2xz\hat{k}$
+10. Prove that the divergence of a curl is always zero. Check it for the function $\vec{v}=x^2\hat{i}+2xz^2\hat{j}-2xz\hat{k}$.
+11. Prove that the curl of a gradient is always zero. Check it for the function $f(x,y,z)=x^2y^3z^4$.
+12. Let $\vec{F}_1=x^2\hat{k}$ and $\vec{F}_2=x\hat{i}+y\hat{j}+z\hat{k}$. Calculate the divergence and curl of $\vec{F}_1$ and $\vec{F}_2$. Which one can be written as the gradient of a scalar? Which one can be written as the curl of a vector?
+13. Show that $\vec{F}=yz\hat{i}+zx\hat{j}+xy\hat{k}$ can be written both as the gradient of a scalar and as the curl of a vector.
