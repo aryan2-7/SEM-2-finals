@@ -5,10 +5,14 @@ An interactive study app covering high-yield derivations from the PHYS102 course
 
 ## What's fully built
 
-- **Ch.1** — The Del Operator (gradient / divergence / curl) · Dot & Cross Product
-- **Ch.2** — Coulomb's Law & Superposition · Gauss's Law
-- **Ch.3** — Short Dipole Field · Dipole in an External Field · Polarization & Bound Charge
-- **Ch.4** — Biot–Savart Law · Ampere's Law · Cyclotron & Cycloid Motion
+- **Ch.1** — Scalars/Vectors & Notation · Vector Addition & Scalar Multiplication · Dot & Cross Product ·
+  Component Form & Calculator · Triple Products · Product Rules · The Del Operator (gradient / divergence / curl)
+- **Ch.2** — Charge Properties · Coulomb's Law & Superposition · Field of a Point Charge & Path Independence ·
+  Continuous Distributions · Standard E-Field Derivations · Field Lines & Flux · Gauss's Law · Electric Potential ·
+  Work & Energy · Conductors
+- **Ch.3** — Electric Dipole & Moment · Short Dipole Field · Dipole in an External Field · Polarizability Model ·
+  Polarization & Bound Charge
+- **Ch.4** — Lorentz Force · Magnetic Flux · Biot–Savart Law · Ampere's Law · Cyclotron & Cycloid Motion
 - **Ch.5** — Magnetic Dipole Moment · Bound Current & Physical Interpretation · Hysteresis Loop · Hysteresis Loss
 - **Ch.6** — Faraday's Law & Lenz's Law · Motional EMF · Self-Induction & RL Circuits · Mutual Induction
 - **Ch.7** — Displacement Current · Macroscopic Maxwell Equations (D, H) · Poynting's Theorem ·

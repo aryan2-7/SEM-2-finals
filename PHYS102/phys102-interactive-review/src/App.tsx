@@ -35,6 +35,23 @@ import AtomicSpectra from './topics/AtomicSpectra';
 import Superconductivity from './topics/Superconductivity';
 import BindingEnergy from './topics/BindingEnergy';
 import QValue from './topics/QValue';
+import VectorsBasics from './topics/VectorsBasics';
+import VectorAddition from './topics/VectorAddition';
+import ComponentForm from './topics/ComponentForm';
+import TripleProducts from './topics/TripleProducts';
+import ProductRules from './topics/ProductRules';
+import ChargeProperties from './topics/ChargeProperties';
+import EFieldPoint from './topics/EFieldPoint';
+import ContinuousDist from './topics/ContinuousDist';
+import StandardDerivations from './topics/StandardDerivations';
+import FieldLines from './topics/FieldLines';
+import Potential from './topics/Potential';
+import WorkEnergy from './topics/WorkEnergy';
+import Conductors from './topics/Conductors';
+import DipoleMoment from './topics/DipoleMoment';
+import Polarizability from './topics/Polarizability';
+import LorentzForce from './topics/LorentzForce';
+import Flux from './topics/Flux';
 
 const STORAGE_KEY = 'phys102-visited';
 
@@ -69,6 +86,23 @@ const featuredComponents: Record<string, React.ComponentType> = {
   'superconductivity': Superconductivity,
   'binding-energy': BindingEnergy,
   'q-value': QValue,
+  'vectors-basics': VectorsBasics,
+  'vector-addition': VectorAddition,
+  'component-form': ComponentForm,
+  'triple-products': TripleProducts,
+  'product-rules': ProductRules,
+  'charge-properties': ChargeProperties,
+  'e-field-point': EFieldPoint,
+  'continuous-dist': ContinuousDist,
+  'standard-derivations': StandardDerivations,
+  'field-lines': FieldLines,
+  'potential': Potential,
+  'work-energy': WorkEnergy,
+  'conductors': Conductors,
+  'dipole-moment': DipoleMoment,
+  'polarizability': Polarizability,
+  'lorentz-force': LorentzForce,
+  'flux': Flux,
 };
 
 // Nav entries that are really aliases of another featured topic's page
