@@ -23,9 +23,9 @@ export const topics: TopicMeta[] = [
   { id: 'triple-products', chapterId: 'ch1', title: 'Triple Products', featured: true },
   { id: 'del-operator', chapterId: 'ch1', title: 'Gradient, Divergence, Curl', featured: true },
   { id: 'product-rules', chapterId: 'ch1', title: 'Product Rules', featured: true },
-  { id: 'fundamental-theorems', chapterId: 'ch1', title: 'Integral Theorems', featured: false },
-  { id: 'spherical-coords', chapterId: 'ch1', title: 'Spherical Coordinates', featured: false },
-  { id: 'helmholtz', chapterId: 'ch1', title: 'Null Identities & Helmholtz', featured: false },
+  { id: 'fundamental-theorems', chapterId: 'ch1', title: 'Integral Theorems', featured: true },
+  { id: 'spherical-coords', chapterId: 'ch1', title: 'Spherical Coordinates', featured: true },
+  { id: 'helmholtz', chapterId: 'ch1', title: 'Null Identities & Helmholtz', featured: true },
 
   // Ch2
   { id: 'charge-properties', chapterId: 'ch2', title: 'Charge Properties', featured: true },
@@ -45,40 +45,40 @@ export const topics: TopicMeta[] = [
   { id: 'dipole-external', chapterId: 'ch3', title: 'Dipole in an External Field', featured: true },
   { id: 'polarizability', chapterId: 'ch3', title: 'Polarizability Model', featured: true },
   { id: 'polarization', chapterId: 'ch3', title: 'Polarization & Bound Charge', featured: true },
-  { id: 'displacement-d', chapterId: 'ch3', title: "Gauss's Law in Dielectrics", featured: false },
-  { id: 'linear-dielectrics', chapterId: 'ch3', title: 'Linear Dielectrics', featured: false },
-  { id: 'clausius-mossotti', chapterId: 'ch3', title: 'Clausius–Mossotti Equation', featured: false },
+  { id: 'displacement-d', chapterId: 'ch3', title: "Gauss's Law in Dielectrics", featured: true },
+  { id: 'linear-dielectrics', chapterId: 'ch3', title: 'Linear Dielectrics', featured: true },
+  { id: 'clausius-mossotti', chapterId: 'ch3', title: 'Clausius–Mossotti Equation', featured: true },
 
   // Ch4
   { id: 'lorentz-force', chapterId: 'ch4', title: 'Lorentz Force', featured: true },
   { id: 'cyclotron-cycloid', chapterId: 'ch4', title: 'Cyclotron & Cycloid Motion', featured: true },
   { id: 'flux', chapterId: 'ch4', title: 'Magnetic Flux', featured: true },
-  { id: 'current-densities', chapterId: 'ch4', title: 'Current Densities & Continuity', featured: false },
-  { id: 'forces-currents', chapterId: 'ch4', title: 'Forces on Currents', featured: false },
+  { id: 'current-densities', chapterId: 'ch4', title: 'Current Densities & Continuity', featured: true },
+  { id: 'forces-currents', chapterId: 'ch4', title: 'Forces on Currents', featured: true },
   { id: 'biot-savart', chapterId: 'ch4', title: 'Biot–Savart Law', featured: true },
   { id: 'ampere-law', chapterId: 'ch4', title: "Ampere's Law", featured: true },
-  { id: 'vector-potential', chapterId: 'ch4', title: 'Vector Potential A', featured: false },
+  { id: 'vector-potential', chapterId: 'ch4', title: 'Vector Potential A', featured: true },
 
   // Ch5
   { id: 'magnetic-dipole', chapterId: 'ch5', title: 'Magnetic Dipole Moment', featured: true },
   { id: 'bound-current', chapterId: 'ch5', title: 'Bound Current — Physical Interpretation', featured: true },
-  { id: 'h-field', chapterId: 'ch5', title: "Ampere's Law in Materials (H)", featured: false },
-  { id: 'susceptibility', chapterId: 'ch5', title: 'Susceptibility & Material Types', featured: false },
-  { id: 'domain-theory', chapterId: 'ch5', title: 'Domain Theory', featured: false },
+  { id: 'h-field', chapterId: 'ch5', title: "Ampere's Law in Materials (H)", featured: true },
+  { id: 'susceptibility', chapterId: 'ch5', title: 'Susceptibility & Material Types', featured: true },
+  { id: 'domain-theory', chapterId: 'ch5', title: 'Domain Theory', featured: true },
   { id: 'hysteresis-loop', chapterId: 'ch5', title: 'Hysteresis Loop', featured: true },
   { id: 'hysteresis-loss', chapterId: 'ch5', title: 'Hysteresis Loss', featured: true },
 
   // Ch6
   { id: 'motional-emf', chapterId: 'ch6', title: 'Motional EMF', featured: true },
   { id: 'faraday-law', chapterId: 'ch6', title: "Faraday's Law & Lenz's Law", featured: true },
-  { id: 'lenz-law', chapterId: 'ch6', title: "Lenz's Law", featured: false },
+  { id: 'lenz-law', chapterId: 'ch6', title: "Lenz's Law", featured: true },
   { id: 'self-induction', chapterId: 'ch6', title: 'Self-Induction & RL Circuits', featured: true },
   { id: 'mutual-induction', chapterId: 'ch6', title: 'Mutual Induction', featured: true },
-  { id: 'magnetic-energy', chapterId: 'ch6', title: 'Energy in Magnetic Field', featured: false },
+  { id: 'magnetic-energy', chapterId: 'ch6', title: 'Energy in Magnetic Field', featured: true },
 
   // Ch7
   { id: 'displacement-current', chapterId: 'ch7', title: 'Displacement Current', featured: true },
-  { id: 'maxwell-vacuum', chapterId: 'ch7', title: "Maxwell's Equations (Vacuum)", featured: false },
+  { id: 'maxwell-vacuum', chapterId: 'ch7', title: "Maxwell's Equations (Vacuum)", featured: true },
   { id: 'macroscopic-eqs', chapterId: 'ch7', title: 'Macroscopic Equations (D, H)', featured: true },
   { id: 'poynting', chapterId: 'ch7', title: "Poynting's Theorem", featured: true },
   { id: 'wave-equation', chapterId: 'ch7', title: 'EM Wave Equation & Speed c', featured: true },
@@ -92,10 +92,10 @@ export const topics: TopicMeta[] = [
   // Ch9
   { id: 'binding-energy', chapterId: 'ch9', title: 'Mass Defect & Binding Energy', featured: true },
   { id: 'radioactivity', chapterId: 'ch9', title: 'Radioactivity & Half-Life', featured: true },
-  { id: 'reaction-types', chapterId: 'ch9', title: 'Types of Nuclear Reactions', featured: false },
+  { id: 'reaction-types', chapterId: 'ch9', title: 'Types of Nuclear Reactions', featured: true },
   { id: 'q-value', chapterId: 'ch9', title: 'Q-Value', featured: true },
   { id: 'threshold-energy', chapterId: 'ch9', title: 'Threshold Energy', featured: true },
-  { id: 'fission-fusion', chapterId: 'ch9', title: 'Fission & Fusion', featured: false },
+  { id: 'fission-fusion', chapterId: 'ch9', title: 'Fission & Fusion', featured: true },
 ];
 
 export const featuredOrder = topics.filter(t => t.featured).map(t => t.id);

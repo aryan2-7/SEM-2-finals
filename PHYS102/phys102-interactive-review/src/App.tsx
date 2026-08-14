@@ -52,6 +52,22 @@ import DipoleMoment from './topics/DipoleMoment';
 import Polarizability from './topics/Polarizability';
 import LorentzForce from './topics/LorentzForce';
 import Flux from './topics/Flux';
+import FundamentalTheorems from './topics/FundamentalTheorems';
+import SphericalCoords from './topics/SphericalCoords';
+import Helmholtz from './topics/Helmholtz';
+import DisplacementD from './topics/DisplacementD';
+import LinearDielectrics from './topics/LinearDielectrics';
+import ClausiusMossotti from './topics/ClausiusMossotti';
+import CurrentDensities from './topics/CurrentDensities';
+import ForcesCurrents from './topics/ForcesCurrents';
+import VectorPotential from './topics/VectorPotential';
+import HField from './topics/HField';
+import Susceptibility from './topics/Susceptibility';
+import DomainTheory from './topics/DomainTheory';
+import MagneticEnergy from './topics/MagneticEnergy';
+import MaxwellVacuum from './topics/MaxwellVacuum';
+import ReactionTypes from './topics/ReactionTypes';
+import FissionFusion from './topics/FissionFusion';
 
 const STORAGE_KEY = 'phys102-visited';
 
@@ -103,6 +119,22 @@ const featuredComponents: Record<string, React.ComponentType> = {
   'polarizability': Polarizability,
   'lorentz-force': LorentzForce,
   'flux': Flux,
+  'fundamental-theorems': FundamentalTheorems,
+  'spherical-coords': SphericalCoords,
+  'helmholtz': Helmholtz,
+  'displacement-d': DisplacementD,
+  'linear-dielectrics': LinearDielectrics,
+  'clausius-mossotti': ClausiusMossotti,
+  'current-densities': CurrentDensities,
+  'forces-currents': ForcesCurrents,
+  'vector-potential': VectorPotential,
+  'h-field': HField,
+  'susceptibility': Susceptibility,
+  'domain-theory': DomainTheory,
+  'magnetic-energy': MagneticEnergy,
+  'maxwell-vacuum': MaxwellVacuum,
+  'reaction-types': ReactionTypes,
+  'fission-fusion': FissionFusion,
 };
 
 // Nav entries that are really aliases of another featured topic's page

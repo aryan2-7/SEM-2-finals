@@ -1,31 +1,36 @@
 # PHYS102 Interactive Review
 
-An interactive study app covering high-yield derivations from the PHYS102 course notes
-(Electrostatics, Magnetostatics, EM Induction, EM Waves, Atoms & Molecules, Nuclear Physics).
+A complete interactive study app covering the full PHYS102 course: Vector Analysis, Electrostatics,
+Magnetostatics, Fields in Matter, EM Induction, EM Waves, Atoms & Molecules, and Nuclear Physics.
 
-## What's fully built
+## Status: all topics built
 
-- **Ch.1** — Scalars/Vectors & Notation · Vector Addition & Scalar Multiplication · Dot & Cross Product ·
-  Component Form & Calculator · Triple Products · Product Rules · The Del Operator (gradient / divergence / curl)
-- **Ch.2** — Charge Properties · Coulomb's Law & Superposition · Field of a Point Charge & Path Independence ·
-  Continuous Distributions · Standard E-Field Derivations · Field Lines & Flux · Gauss's Law · Electric Potential ·
-  Work & Energy · Conductors
-- **Ch.3** — Electric Dipole & Moment · Short Dipole Field · Dipole in an External Field · Polarizability Model ·
-  Polarization & Bound Charge
-- **Ch.4** — Lorentz Force · Magnetic Flux · Biot–Savart Law · Ampere's Law · Cyclotron & Cycloid Motion
-- **Ch.5** — Magnetic Dipole Moment · Bound Current & Physical Interpretation · Hysteresis Loop · Hysteresis Loss
-- **Ch.6** — Faraday's Law & Lenz's Law · Motional EMF · Self-Induction & RL Circuits · Mutual Induction
-- **Ch.7** — Displacement Current · Macroscopic Maxwell Equations (D, H) · Poynting's Theorem ·
-  EM Wave Equation & Speed of Light
-- **Ch.8** — Atomic Spectra & Rydberg Formula · Types of Molecular Transitions (slide deck) ·
-  Raman Effect (slide deck) · Superconductivity
-- **Ch.9** — Mass Defect & Binding Energy · Q-Value · Threshold Energy · Radioactivity & Half-Life
+Every topic in the curriculum is now fully interactive — concept summary, KaTeX-rendered formulas, a
+step-by-step derivation reveal (where applicable), a hand-built interactive visualization, and a self-check
+quiz with instant feedback.
 
-Each topic has: a concept summary, KaTeX-rendered formulas, a step-by-step derivation you reveal one step
-at a time, a hand-built interactive visualization, and a self-check quiz with instant feedback.
-
-The full 9-chapter nav is present in the sidebar and home dashboard — non-built topics show a placeholder
-rather than being silently missing. Progress (which featured topics you've visited) is saved to localStorage.
+- **Ch.1 — Vector Analysis**: scalars/vectors & notation, addition & scalar multiplication, dot & cross
+  product, component form & calculator, triple products, product rules, the del operator (gradient/
+  divergence/curl), fundamental (integral) theorems, spherical coordinates, null identities & Helmholtz theorem
+- **Ch.2 — Electrostatic Field**: charge properties, Coulomb's law & superposition, field of a point charge &
+  path independence, continuous distributions, standard E-field derivations, field lines & flux, Gauss's law,
+  electric potential, work & energy, conductors
+- **Ch.3 — Electrostatic Field in Matter**: dipole & dipole moment, short-dipole field, dipole in an external
+  field, polarizability model, polarization & bound charge, Gauss's law in dielectrics (D field), linear
+  dielectrics, Clausius–Mossotti equation
+- **Ch.4 — Magnetostatics**: Lorentz force, cyclotron & cycloid motion, magnetic flux, current densities &
+  continuity, forces on currents, Biot–Savart law, Ampere's law, vector potential A
+- **Ch.5 — Magnetostatic Field in Matter**: magnetic dipole moment, bound current & physical interpretation,
+  Ampere's law in materials (H field), susceptibility & material types, domain theory, hysteresis loop,
+  hysteresis loss
+- **Ch.6 — Electromagnetic Induction**: motional EMF, Faraday's law & Lenz's law, self-induction & RL
+  circuits, mutual induction, energy in the magnetic field
+- **Ch.7 — EM Wave Propagation**: displacement current, Maxwell's equations (vacuum), macroscopic Maxwell
+  equations (D, H), Poynting's theorem, EM wave equation & speed of light
+- **Ch.8 — Atoms & Molecules**: atomic spectra & Rydberg formula, types of molecular transitions (slide deck),
+  Raman effect (slide deck), superconductivity
+- **Ch.9 — Nuclear Physics**: mass defect & binding energy, radioactivity & half-life, types of nuclear
+  reactions, Q-value, threshold energy, fission & fusion
 
 ## Run it
 
@@ -58,3 +63,5 @@ React + TypeScript + Vite, react-katex for math, hand-rolled SVG/Canvas for all 
   and wire it into `featuredComponents` in `src/App.tsx`.
 - To make one nav entry point at another topic's page (like Lenz's Law living on the Faraday's Law page),
   add an entry to `aliasRedirect` in `src/App.tsx` instead of building a duplicate page.
+- The bundle is a single ~800KB chunk; consider code-splitting with dynamic `import()` per chapter if load
+  time becomes a concern.
