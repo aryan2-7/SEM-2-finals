@@ -37,7 +37,7 @@ export default function HysteresisLoopViz() {
       pts.push(loopPoint(i / 200, 1, 1, Hc));
     }
     return pts;
-  }, [Br, Hc]);
+  }, [Hc]);
 
   const toSvg = (H: number, B: number) => ({ x: 240 + H * 170, y: 180 - B * 130 });
 

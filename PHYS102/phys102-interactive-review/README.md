@@ -63,5 +63,6 @@ React + TypeScript + Vite, react-katex for math, hand-rolled SVG/Canvas for all 
   and wire it into `featuredComponents` in `src/App.tsx`.
 - To make one nav entry point at another topic's page (like Lenz's Law living on the Faraday's Law page),
   add an entry to `aliasRedirect` in `src/App.tsx` instead of building a duplicate page.
-- The bundle is a single ~800KB chunk; consider code-splitting with dynamic `import()` per chapter if load
-  time becomes a concern.
+- Topic pages are code-split with `React.lazy`/dynamic `import()` in `src/App.tsx`, so each one only loads
+  when visited. New topics registered in `featuredComponents` should follow the same `lazy(() => import(...))`
+  pattern rather than a static import, to keep the initial bundle small.

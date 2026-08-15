@@ -10,7 +10,8 @@ export default function RLCircuitViz() {
 
   const points = useMemo(() => {
     const pts = [];
-    const tMax = tau * 5;
+    const localTau = L / R;
+    const tMax = localTau * 5;
     for (let i = 0; i <= 100; i++) {
       const t = (i / 100) * tMax;
       const I = Imax * (1 - Math.exp((-R / L) * t));
