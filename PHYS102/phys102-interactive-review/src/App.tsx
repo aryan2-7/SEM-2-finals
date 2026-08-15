@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { HashRouter, Routes, Route, useNavigate, useParams } from 'react-router-dom';
 import 'katex/dist/katex.min.css';
 import Sidebar from './components/Sidebar';
 import Placeholder from './components/Placeholder';
@@ -143,8 +144,10 @@ const aliasRedirect: Record<string, string> = {
   'lenz-law': 'faraday-law',
 };
 
-export default function App() {
-  const [active, setActive] = useState<string>('home');
+function AppShell() {
+  const navigate = useNavigate();
+  const { topicId } = useParams<{ topicId: string }>();
+  const active = topicId ?? 'home';
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [visited, setVisited] = useState<Set<string>>(() => {
     try {
@@ -168,7 +171,8 @@ export default function App() {
   }, [active]);
 
   function select(id: string) {
-    setActive(aliasRedirect[id] ?? id);
+    const resolved = aliasRedirect[id] ?? id;
+    navigate(resolved === 'home' ? '/' : `/${resolved}`);
   }
 
   const resolvedActive = aliasRedirect[active] ?? active;
@@ -204,12 +208,14 @@ export default function App() {
         }}>
           <button
             onClick={() => setSidebarOpen(o => !o)}
+            aria-label={sidebarOpen ? 'Collapse sidebar' : 'Expand sidebar'}
+            aria-pressed={sidebarOpen}
             style={{ background: 'transparent', border: '1px solid var(--border)', borderRadius: 6, padding: '5px 10px', color: 'var(--text-dim)', fontSize: 12 }}
           >
             ☰
           </button>
           <button
-            onClick={() => setActive('home')}
+            onClick={() => navigate('/')}
             style={{ background: 'transparent', border: 'none', color: 'var(--text-dim)', fontSize: 12.5, fontFamily: 'var(--mono)' }}
           >
             ← dashboard
@@ -218,5 +224,16 @@ export default function App() {
         {content}
       </div>
     </div>
+  );
+}
+
+export default function App() {
+  return (
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<AppShell />} />
+        <Route path="/:topicId" element={<AppShell />} />
+      </Routes>
+    </HashRouter>
   );
 }
