@@ -144,11 +144,15 @@ const aliasRedirect: Record<string, string> = {
   'lenz-law': 'faraday-law',
 };
 
+const MOBILE_BREAKPOINT = 860;
+
 function AppShell() {
   const navigate = useNavigate();
   const { topicId } = useParams<{ topicId: string }>();
   const active = topicId ?? 'home';
-  const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [sidebarOpen, setSidebarOpen] = useState(
+    () => typeof window === 'undefined' || window.innerWidth > MOBILE_BREAKPOINT,
+  );
   const [visited, setVisited] = useState<Set<string>>(() => {
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
@@ -173,6 +177,9 @@ function AppShell() {
   function select(id: string) {
     const resolved = aliasRedirect[id] ?? id;
     navigate(resolved === 'home' ? '/' : `/${resolved}`);
+    if (typeof window !== 'undefined' && window.innerWidth <= MOBILE_BREAKPOINT) {
+      setSidebarOpen(false);
+    }
   }
 
   const resolvedActive = aliasRedirect[active] ?? active;
