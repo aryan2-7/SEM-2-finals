@@ -1,74 +1,76 @@
-import { useEffect, useState } from 'react';
+import { useEffect, lazy, Suspense, useState } from 'react';
 import { HashRouter, Routes, Route, useNavigate, useParams } from 'react-router-dom';
 import 'katex/dist/katex.min.css';
 import Sidebar from './components/Sidebar';
 import Placeholder from './components/Placeholder';
 import { chapters, topics } from './data/registry';
 
+// Home is the landing page, so it loads eagerly. Every other topic is code-split
+// with React.lazy so the initial bundle only ships the ~65 chapter pages on demand.
 import Home from './topics/Home';
-import DipoleField from './topics/DipoleField';
-import Polarization from './topics/Polarization';
-import BoundCurrent from './topics/BoundCurrent';
-import HysteresisLoop from './topics/HysteresisLoop';
-import HysteresisLoss from './topics/HysteresisLoss';
-import MacroscopicEquations from './topics/MacroscopicEquations';
-import Poynting from './topics/Poynting';
-import MolecularTransitions from './topics/MolecularTransitions';
-import RamanEffect from './topics/RamanEffect';
-import ThresholdEnergy from './topics/ThresholdEnergy';
-import DelOperator from './topics/DelOperator';
-import CoulombLaw from './topics/CoulombLaw';
-import GaussLaw from './topics/GaussLaw';
-import DipoleExternal from './topics/DipoleExternal';
-import BiotSavart from './topics/BiotSavart';
-import FaradayLenz from './topics/FaradayLenz';
-import SelfInduction from './topics/SelfInduction';
-import DisplacementCurrent from './topics/DisplacementCurrent';
-import WaveEquation from './topics/WaveEquation';
-import Radioactivity from './topics/Radioactivity';
-import DotCross from './topics/DotCross';
-import AmpereLaw from './topics/AmpereLaw';
-import CyclotronCycloid from './topics/CyclotronCycloid';
-import MagneticDipole from './topics/MagneticDipole';
-import MotionalEmf from './topics/MotionalEmf';
-import MutualInduction from './topics/MutualInduction';
-import AtomicSpectra from './topics/AtomicSpectra';
-import Superconductivity from './topics/Superconductivity';
-import BindingEnergy from './topics/BindingEnergy';
-import QValue from './topics/QValue';
-import VectorsBasics from './topics/VectorsBasics';
-import VectorAddition from './topics/VectorAddition';
-import ComponentForm from './topics/ComponentForm';
-import TripleProducts from './topics/TripleProducts';
-import ProductRules from './topics/ProductRules';
-import ChargeProperties from './topics/ChargeProperties';
-import EFieldPoint from './topics/EFieldPoint';
-import ContinuousDist from './topics/ContinuousDist';
-import StandardDerivations from './topics/StandardDerivations';
-import FieldLines from './topics/FieldLines';
-import Potential from './topics/Potential';
-import WorkEnergy from './topics/WorkEnergy';
-import Conductors from './topics/Conductors';
-import DipoleMoment from './topics/DipoleMoment';
-import Polarizability from './topics/Polarizability';
-import LorentzForce from './topics/LorentzForce';
-import Flux from './topics/Flux';
-import FundamentalTheorems from './topics/FundamentalTheorems';
-import SphericalCoords from './topics/SphericalCoords';
-import Helmholtz from './topics/Helmholtz';
-import DisplacementD from './topics/DisplacementD';
-import LinearDielectrics from './topics/LinearDielectrics';
-import ClausiusMossotti from './topics/ClausiusMossotti';
-import CurrentDensities from './topics/CurrentDensities';
-import ForcesCurrents from './topics/ForcesCurrents';
-import VectorPotential from './topics/VectorPotential';
-import HField from './topics/HField';
-import Susceptibility from './topics/Susceptibility';
-import DomainTheory from './topics/DomainTheory';
-import MagneticEnergy from './topics/MagneticEnergy';
-import MaxwellVacuum from './topics/MaxwellVacuum';
-import ReactionTypes from './topics/ReactionTypes';
-import FissionFusion from './topics/FissionFusion';
+const DipoleField = lazy(() => import('./topics/DipoleField'));
+const Polarization = lazy(() => import('./topics/Polarization'));
+const BoundCurrent = lazy(() => import('./topics/BoundCurrent'));
+const HysteresisLoop = lazy(() => import('./topics/HysteresisLoop'));
+const HysteresisLoss = lazy(() => import('./topics/HysteresisLoss'));
+const MacroscopicEquations = lazy(() => import('./topics/MacroscopicEquations'));
+const Poynting = lazy(() => import('./topics/Poynting'));
+const MolecularTransitions = lazy(() => import('./topics/MolecularTransitions'));
+const RamanEffect = lazy(() => import('./topics/RamanEffect'));
+const ThresholdEnergy = lazy(() => import('./topics/ThresholdEnergy'));
+const DelOperator = lazy(() => import('./topics/DelOperator'));
+const CoulombLaw = lazy(() => import('./topics/CoulombLaw'));
+const GaussLaw = lazy(() => import('./topics/GaussLaw'));
+const DipoleExternal = lazy(() => import('./topics/DipoleExternal'));
+const BiotSavart = lazy(() => import('./topics/BiotSavart'));
+const FaradayLenz = lazy(() => import('./topics/FaradayLenz'));
+const SelfInduction = lazy(() => import('./topics/SelfInduction'));
+const DisplacementCurrent = lazy(() => import('./topics/DisplacementCurrent'));
+const WaveEquation = lazy(() => import('./topics/WaveEquation'));
+const Radioactivity = lazy(() => import('./topics/Radioactivity'));
+const DotCross = lazy(() => import('./topics/DotCross'));
+const AmpereLaw = lazy(() => import('./topics/AmpereLaw'));
+const CyclotronCycloid = lazy(() => import('./topics/CyclotronCycloid'));
+const MagneticDipole = lazy(() => import('./topics/MagneticDipole'));
+const MotionalEmf = lazy(() => import('./topics/MotionalEmf'));
+const MutualInduction = lazy(() => import('./topics/MutualInduction'));
+const AtomicSpectra = lazy(() => import('./topics/AtomicSpectra'));
+const Superconductivity = lazy(() => import('./topics/Superconductivity'));
+const BindingEnergy = lazy(() => import('./topics/BindingEnergy'));
+const QValue = lazy(() => import('./topics/QValue'));
+const VectorsBasics = lazy(() => import('./topics/VectorsBasics'));
+const VectorAddition = lazy(() => import('./topics/VectorAddition'));
+const ComponentForm = lazy(() => import('./topics/ComponentForm'));
+const TripleProducts = lazy(() => import('./topics/TripleProducts'));
+const ProductRules = lazy(() => import('./topics/ProductRules'));
+const ChargeProperties = lazy(() => import('./topics/ChargeProperties'));
+const EFieldPoint = lazy(() => import('./topics/EFieldPoint'));
+const ContinuousDist = lazy(() => import('./topics/ContinuousDist'));
+const StandardDerivations = lazy(() => import('./topics/StandardDerivations'));
+const FieldLines = lazy(() => import('./topics/FieldLines'));
+const Potential = lazy(() => import('./topics/Potential'));
+const WorkEnergy = lazy(() => import('./topics/WorkEnergy'));
+const Conductors = lazy(() => import('./topics/Conductors'));
+const DipoleMoment = lazy(() => import('./topics/DipoleMoment'));
+const Polarizability = lazy(() => import('./topics/Polarizability'));
+const LorentzForce = lazy(() => import('./topics/LorentzForce'));
+const Flux = lazy(() => import('./topics/Flux'));
+const FundamentalTheorems = lazy(() => import('./topics/FundamentalTheorems'));
+const SphericalCoords = lazy(() => import('./topics/SphericalCoords'));
+const Helmholtz = lazy(() => import('./topics/Helmholtz'));
+const DisplacementD = lazy(() => import('./topics/DisplacementD'));
+const LinearDielectrics = lazy(() => import('./topics/LinearDielectrics'));
+const ClausiusMossotti = lazy(() => import('./topics/ClausiusMossotti'));
+const CurrentDensities = lazy(() => import('./topics/CurrentDensities'));
+const ForcesCurrents = lazy(() => import('./topics/ForcesCurrents'));
+const VectorPotential = lazy(() => import('./topics/VectorPotential'));
+const HField = lazy(() => import('./topics/HField'));
+const Susceptibility = lazy(() => import('./topics/Susceptibility'));
+const DomainTheory = lazy(() => import('./topics/DomainTheory'));
+const MagneticEnergy = lazy(() => import('./topics/MagneticEnergy'));
+const MaxwellVacuum = lazy(() => import('./topics/MaxwellVacuum'));
+const ReactionTypes = lazy(() => import('./topics/ReactionTypes'));
+const FissionFusion = lazy(() => import('./topics/FissionFusion'));
 
 const STORAGE_KEY = 'phys102-visited';
 
@@ -191,7 +193,11 @@ function AppShell() {
     content = <Home onSelect={select} visited={visited} />;
   } else if (featuredComponents[resolvedActive]) {
     const Comp = featuredComponents[resolvedActive];
-    content = <Comp />;
+    content = (
+      <Suspense fallback={<div style={{ padding: 48, color: 'var(--text-dim)', fontFamily: 'var(--mono)', fontSize: 13 }}>loading…</div>}>
+        <Comp />
+      </Suspense>
+    );
   } else if (topicMeta) {
     content = (
       <Placeholder
