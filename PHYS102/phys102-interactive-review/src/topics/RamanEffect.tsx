@@ -46,7 +46,7 @@ const quiz: QuizQuestion[] = [
 
 export default function RamanEffect() {
   const slides = [
-    <div>
+    <div key="intro">
       <div style={{ fontFamily: 'var(--mono)', fontSize: 12, letterSpacing: 1.5, color: accent, marginBottom: 10 }}>
         CH. 08 — ATOMS &amp; MOLECULES · SLIDE 1/6
       </div>
@@ -58,7 +58,7 @@ export default function RamanEffect() {
         vibrational spectrum.
       </Concept>
     </div>,
-    <div>
+    <div key="mechanism">
       <div style={{ fontFamily: 'var(--mono)', fontSize: 12, letterSpacing: 1.5, color: accent, marginBottom: 10 }}>
         SLIDE 2/6 — MECHANISM &amp; ENERGY DIAGRAM
       </div>
@@ -69,19 +69,19 @@ export default function RamanEffect() {
         <VizFrame height={380}><RamanLevelViz /></VizFrame>
       </div>
     </div>,
-    <div>
+    <div key="stokes">
       <div style={{ fontFamily: 'var(--mono)', fontSize: 12, letterSpacing: 1.5, color: accent, marginBottom: 10 }}>
         SLIDE 3/6 — QUANTUM DERIVATION: STOKES LINE
       </div>
       <Derivation steps={stokesSteps} accent={accent} />
     </div>,
-    <div>
+    <div key="anti-stokes">
       <div style={{ fontFamily: 'var(--mono)', fontSize: 12, letterSpacing: 1.5, color: accent, marginBottom: 10 }}>
         SLIDE 4/6 — QUANTUM DERIVATION: ANTI-STOKES LINE
       </div>
       <Derivation steps={antiStokesSteps} accent={accent} />
     </div>,
-    <div>
+    <div key="setup">
       <div style={{ fontFamily: 'var(--mono)', fontSize: 12, letterSpacing: 1.5, color: accent, marginBottom: 10 }}>
         SLIDE 5/6 — EXPERIMENTAL SETUP &amp; SPECTRUM
       </div>
@@ -90,7 +90,7 @@ export default function RamanEffect() {
         <VizFrame height={300}><RamanSpectrumViz /></VizFrame>
       </div>
     </div>,
-    <div>
+    <div key="quiz">
       <div style={{ fontFamily: 'var(--mono)', fontSize: 12, letterSpacing: 1.5, color: accent, marginBottom: 10 }}>
         SLIDE 6/6 — SELF-CHECK
       </div>

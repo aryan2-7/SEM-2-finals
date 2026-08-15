@@ -29,7 +29,7 @@ const quiz: QuizQuestion[] = [
 
 export default function MolecularTransitions() {
   const slides = [
-    <div>
+    <div key="intro">
       <div style={{ fontFamily: 'var(--mono)', fontSize: 12, letterSpacing: 1.5, color: accent, marginBottom: 10 }}>
         CH. 08 — ATOMS &amp; MOLECULES · SLIDE 1/4
       </div>
@@ -40,7 +40,7 @@ export default function MolecularTransitions() {
         electromagnetic spectrum.
       </Concept>
     </div>,
-    <div>
+    <div key="types">
       <div style={{ fontFamily: 'var(--mono)', fontSize: 12, letterSpacing: 1.5, color: accent, marginBottom: 10 }}>
         SLIDE 2/4 — THE THREE TYPES
       </div>
@@ -54,7 +54,7 @@ export default function MolecularTransitions() {
         Rotational transitions occur between rotational levels within the same vibrational state.
       </p>
     </div>,
-    <div>
+    <div key="diagram">
       <div style={{ fontFamily: 'var(--mono)', fontSize: 12, letterSpacing: 1.5, color: accent, marginBottom: 10 }}>
         SLIDE 3/4 — INTERACTIVE DIAGRAM
       </div>
@@ -62,7 +62,7 @@ export default function MolecularTransitions() {
         <MolecularTransitionsViz />
       </VizFrame>
     </div>,
-    <div>
+    <div key="quiz">
       <div style={{ fontFamily: 'var(--mono)', fontSize: 12, letterSpacing: 1.5, color: accent, marginBottom: 10 }}>
         SLIDE 4/4 — SELF-CHECK
       </div>
