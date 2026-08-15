@@ -2,6 +2,13 @@ import { useRef, useState } from 'react';
 
 interface Charge { id: number; x: number; y: number; q: number }
 
+// Arrow length is a saturating function of the force magnitude rather than a
+// direct/clamped scale of it, so the arrow stays clearly visible at any
+// separation instead of shrinking to sub-pixel length when charges are far apart.
+const MIN_ARROW_LEN = 24;
+const MAX_ARROW_LEN = 70;
+const FORCE_SATURATION = 0.3;
+
 export default function CoulombViz() {
   const [charges, setCharges] = useState<Charge[]>([
     { id: 1, x: 150, y: 130, q: 1 },
@@ -46,10 +53,12 @@ export default function CoulombViz() {
       >
         {charges.map(c => {
           const { fx, fy, mag } = forceOn(c);
-          const scale = Math.min(60, mag) / (mag || 1);
+          const dirX = mag > 1e-6 ? fx / mag : 0;
+          const dirY = mag > 1e-6 ? fy / mag : 0;
+          const len = MIN_ARROW_LEN + (MAX_ARROW_LEN - MIN_ARROW_LEN) * (mag / (mag + FORCE_SATURATION));
           return (
             <line key={'f' + c.id}
-              x1={c.x} y1={c.y} x2={c.x + fx * scale} y2={c.y + fy * scale}
+              x1={c.x} y1={c.y} x2={c.x + dirX * len} y2={c.y + dirY * len}
               stroke="#f2b544" strokeWidth={2} markerEnd="url(#fArrow)" />
           );
         })}
