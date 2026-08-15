@@ -2,23 +2,25 @@ import { useMemo, useState } from 'react';
 
 type Case = 'wire' | 'solenoid' | 'cylinder';
 
+const SOLENOID_RADIUS = 50; // wire/solenoid radius reference
+
+function fieldB(radius: number, c: Case, a = SOLENOID_RADIUS) {
+  if (c === 'wire') return radius < 3 ? 0 : 1 / radius;
+  if (c === 'solenoid') return radius < a ? 1 : 0;
+  // cylinder, uniform surface current: 0 inside, 1/r outside
+  return radius < a ? 0 : a / radius;
+}
+
 export default function AmpereLawViz() {
   const [c, setC] = useState<Case>('wire');
   const [r, setR] = useState(60);
-  const a = 50; // wire/solenoid radius reference
-
-  function B(radius: number) {
-    if (c === 'wire') return radius < 3 ? 0 : 1 / radius;
-    if (c === 'solenoid') return radius < a ? 1 : 0;
-    // cylinder, uniform surface current: 0 inside, 1/r outside
-    return radius < a ? 0 : a / radius;
-  }
+  const a = SOLENOID_RADIUS;
 
   const points = useMemo(() => {
     const pts = [];
-    for (let rad = 2; rad <= 140; rad += 2) pts.push({ rad, b: B(rad) });
+    for (let rad = 2; rad <= 140; rad += 2) pts.push({ rad, b: fieldB(rad, c, a) });
     return pts;
-  }, [c]);
+  }, [c, a]);
 
   const maxB = Math.max(...points.map(p => p.b), 0.01);
   const plotX = (rad: number) => 40 + (rad / 140) * 200;
@@ -42,7 +44,7 @@ export default function AmpereLawViz() {
           <line x1={plotX(a)} y1={20} x2={plotX(a)} y2={190} stroke="#3a4256" strokeDasharray="3 2" />
           <text x={plotX(a)} y={200} fontSize={9} fill="#7b8299" textAnchor="middle" fontFamily="var(--mono)">a</text>
           <path d={pathD} fill="none" stroke="#59c98e" strokeWidth={2} />
-          <circle cx={plotX(r)} cy={plotY(B(r))} r={4} fill="#5b8def" />
+          <circle cx={plotX(r)} cy={plotY(fieldB(r, c, a))} r={4} fill="#5b8def" />
         </svg>
       </div>
 

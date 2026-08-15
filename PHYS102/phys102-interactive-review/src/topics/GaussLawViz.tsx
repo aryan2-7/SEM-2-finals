@@ -2,30 +2,30 @@ import { useMemo, useState } from 'react';
 
 type DistType = 'shell' | 'solid' | 'nonuniform';
 
+function fieldE(radius: number, dist: DistType, R: number) {
+  // normalized units, q or equivalent = 1
+  if (dist === 'shell') {
+    return radius < R ? 0 : 1 / (radius * radius) * (R * R);
+  }
+  if (dist === 'solid') {
+    return radius < R ? radius / R : (R * R) / (radius * radius);
+  }
+  // nonuniform rho = kr
+  return radius < R ? (radius * radius) / (R * R) : (R * R) / (radius * radius);
+}
+
 export default function GaussLawViz() {
   const [dist, setDist] = useState<DistType>('shell');
   const [r, setR] = useState(60);
   const R = 60; // charge boundary radius
 
-  function E(radius: number) {
-    // normalized units, q or equivalent = 1
-    if (dist === 'shell') {
-      return radius < R ? 0 : 1 / (radius * radius) * (R * R);
-    }
-    if (dist === 'solid') {
-      return radius < R ? radius / R : (R * R) / (radius * radius);
-    }
-    // nonuniform rho = kr
-    return radius < R ? (radius * radius) / (R * R) : (R * R) / (radius * radius);
-  }
-
   const curvePoints = useMemo(() => {
     const pts = [];
     for (let rad = 2; rad <= 140; rad += 2) {
-      pts.push({ rad, e: E(rad) });
+      pts.push({ rad, e: fieldE(rad, dist, R) });
     }
     return pts;
-  }, [dist]);
+  }, [dist, R]);
 
   const maxE = Math.max(...curvePoints.map(p => p.e));
   const plotX = (rad: number) => 40 + (rad / 140) * 200;
@@ -53,7 +53,7 @@ export default function GaussLawViz() {
           <line x1={plotX(R)} y1={20} x2={plotX(R)} y2={190} stroke="#3a4256" strokeDasharray="3 2" />
           <text x={plotX(R)} y={200} fontSize={9} fill="#7b8299" textAnchor="middle" fontFamily="var(--mono)">R</text>
           <path d={pathD} fill="none" stroke="#59c98e" strokeWidth={2} />
-          <circle cx={plotX(r)} cy={plotY(E(r))} r={4} fill="#f2b544" />
+          <circle cx={plotX(r)} cy={plotY(fieldE(r, dist, R))} r={4} fill="#f2b544" />
         </svg>
       </div>
 

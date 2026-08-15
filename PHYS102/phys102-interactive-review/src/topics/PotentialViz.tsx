@@ -1,20 +1,22 @@
 import { useMemo, useState } from 'react';
 
-export default function PotentialViz() {
-  const [config, setConfig] = useState<'point' | 'shell'>('shell');
-  const Rshell = 50;
+type Config = 'point' | 'shell';
 
-  function V(r: number) {
-    if (config === 'point') return r < 3 ? 100 : 100 * (3 / r);
-    // shell: constant inside, 1/r outside
-    return r < Rshell ? 1 : Rshell / r;
-  }
+function potentialV(r: number, config: Config, Rshell: number) {
+  if (config === 'point') return r < 3 ? 100 : 100 * (3 / r);
+  // shell: constant inside, 1/r outside
+  return r < Rshell ? 1 : Rshell / r;
+}
+
+export default function PotentialViz() {
+  const [config, setConfig] = useState<Config>('shell');
+  const Rshell = 50;
 
   const points = useMemo(() => {
     const pts = [];
-    for (let r = 2; r <= 150; r += 2) pts.push({ r, v: V(r) });
+    for (let r = 2; r <= 150; r += 2) pts.push({ r, v: potentialV(r, config, Rshell) });
     return pts;
-  }, [config]);
+  }, [config, Rshell]);
 
   const maxV = Math.max(...points.map(p => p.v));
   const plotX = (r: number) => 40 + (r / 150) * 220;
