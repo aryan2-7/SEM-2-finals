@@ -1,14 +1,5 @@
 # MATH 104 — Exam Structure Analysis & Study Plan
 
-Built from 9 real papers (2017 Aug/Sep, 2018 Jan, 2018 Aug, 2019 Aug, 2022 May/Jun,
-2023 Apr/May, 2024 Jun/Jul, 2024 Sep resit, 2025 Mar) plus your `repeated.md` and
-`single.md` compilations. One note up front: the 2017 upload actually contained
-**two stapled-together exams** — MATH 104 (pages 1–7) and MATH 102 Probability &
-Statistics (pages 8+). I only used the MATH 104 portion. Worth checking your other
-files for the same issue if you scan more papers later.
-
----
-
 ## 1. The format never changes. Memorize this shape.
 
 Every single sitting, 2017 through 2025, follows the exact same skeleton:
@@ -209,9 +200,3 @@ the 28 available Section C marks — then layer Section D's high-frequency items
 (Fourier, TNB, triple integrals, coordinate conversion) and the Section A/B
 fact sheet around it.
 
-One more thing worth flagging honestly: repeated structures are a strong
-signal for *how* KU tends to write this exam, not a guarantee about this
-specific sitting. Treat this as where to build genuine understanding fastest,
-not as a bet-everything shortcut — a paper that breaks the pattern is always
-possible, and understanding the underlying method (not just the recurring
-example) is what actually protects you either way.
