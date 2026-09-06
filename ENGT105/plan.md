@@ -1,82 +1,83 @@
-# ENGT-105 First Internal — Study Checklist
+# ENGT-105 Final Exam — Study Checklist
 
-Scope: Unit I, Unit III, Unit IV | 1 hr 15 min | 20 marks | 4 days left
+Full semester scope | 2 hrs 30 min | 40 marks | answer 8 of 9 | 4 days left
 
-Check items off as you actually cover them, not as you skim them.
+Check items off as you actually study them, not skim them.
 
 ---
 
-## Unit I — Technical Communication Basics
+## Business & Technical Writing
 
-- [ ] Objectives of technical communication (what are they, why they matter)
-- [ ] Audience types — especially "lay" audience definition and how to write for them
-- [ ] The writing **process** — prewriting → drafting → revising → proofreading, know what happens at each stage
-- [ ] Document design — all 4 aspects with 2 examples each:
-  - [ ] Organization
-  - [ ] Order
-  - [ ] Access
-  - [ ] Variety
-- [ ] Why "accuracy" matters in technical writing (legal/safety compliance angle)
-- [ ] White space and headings/subheadings — why they improve readability
-
-## Unit III — Strategic/Rhetorical Communication
-
-- [ ] Oral presentation — how to open (thought-provoking question/story, not reading script)
-- [ ] Oral presentation — why rehearsal matters
-- [ ] Oral presentation — full process flow (prewriting → post-presentation)
-- [ ] Digital literacy — definition
-- [ ] Digital literacy vs. social media use — be ready to argue they're not the same, with 2–3 reasons
-- [ ] Visual communication basics
-- [ ] Writing with collaborators — task distribution / deadline-setting message format
-
-## Unit IV — Organizational and Business Communication
-
-- [ ] Email structure (greeting → purpose → update/challenge → progress → request → closing)
-- [ ] cc vs bcc — purpose of each
-- [ ] When to use a letter instead of an email (formal/legal notices)
+- [ ] Concept paper — full structure (problem/question, objectives, methodology, timeline, budget)
+- [ ] Proposal — Introduction section (standalone)
+- [ ] Proposal — Project Description section (standalone)
+- [ ] Long Report outline — all components including what belongs in Appendices vs. Executive Summary
 - [ ] Formal letter — 8 essential components
 - [ ] Formal letter — 5 optional components
-- [ ] Memo format and when it's used (e.g., requesting materials, postponing something)
-- [ ] Résumé structure: contact info → objective → education → skills → experience → certifications
-- [ ] Job application letter structure
-- [ ] Internal proposal — key sections (Objectives, Project Description, Methodology, Timeline, Budget, Appendices)
-- [ ] Internal report — outline structure, especially what belongs in Appendices vs. Executive Summary/Abstract
-- [ ] Concept paper components (objectives, methodology, timeline, budget) and what's typically NOT included (e.g., detailed technical drawings)
-- [ ] Writing for e-media — basics
-- [ ] Toulmin's Model — claim, warrant, backing, grounds (with one worked example)
+- [ ] Résumé — full structure from a candidate profile
+- [ ] Job application letter — structure and tone
+- [ ] Memo format (To/From/Date/Subject/body/action)
+- [ ] Collaborative/team message (task distribution, deadlines, accountability)
+- [ ] PPT/oral presentation outline — slide structure, how to open, rehearsal rationale
+- [ ] Toulmin's Model — claim, grounds, warrant, backing, with one worked example
+- [ ] Document design — 4 aspects (organization, order, access, variety) with examples
 
-## Cross-cutting / MCQ traps to review
+## Literature & Rhetorical Analysis — know each text's core argument
 
-- [ ] Inductive vs. deductive reasoning — one example of each
-- [ ] APA citation format basics (Author, Year, *Title*, Publisher)
-- [ ] "Which of these is NOT included in X" style questions — appendices, concept paper, executive summary
+- [ ] "The Myth of Sisyphus" (Camus) — why Sisyphus is "happy"
+- [ ] "The Allegory of the Cave" (Plato) — prisoners, the freed prisoner's return, reaction
+- [ ] "Swan Song" (Chekhov) — Svetlovidov's regret and disillusionment
+- [ ] "The Road Not Taken" (Frost) — ambiguity of the choice, retrospective meaning
+- [ ] "We Are All Scientists" (Huxley) — everyday reasoning as scientific method
+- [ ] "The Making of a Scientist" (Ramachandran) — interdisciplinary thinking, science + poetry
+- [ ] "The Burden of Skepticism" (Sagan) — danger of excessive skepticism
+- [ ] "Letter to Einstein" (Freud) — human instinct and the impossibility of eliminating war
+- [ ] Charles van Doren piece — ancient Greek references to 20th-century physics
+- [ ] Comparison: Frost vs. Chekhov (choice/regret)
+- [ ] Comparison: Camus vs. Plato (ignorance vs. enlightenment)
+- [ ] Narration technique across Ramachandran/Camus/Plato
+
+## Cross-cutting / MCQ-style knowledge
+
+- [ ] Inductive vs. deductive reasoning — one Nepal-context example of each
+- [ ] Audience types — lay vs. expert
+- [ ] Digital literacy vs. social media use
+- [ ] APA citation format basics
+- [ ] cc vs bcc, when to use a letter instead of email
+- [ ] What's NOT typically in appendices/concept paper/executive summary (trap questions)
 
 ---
 
 ## Practice Phase (do this AFTER every box above is checked)
 
-Studying ≠ retrieval. The exam requires you to produce answers, not recognize them. Do these in order:
+Studying ≠ retrieval. The exam requires you to produce full, formal 5-mark answers under time pressure — so the last push has to be output-focused, not input-focused.
 
 ### Step 1 — Closed-book brain dump (no notes)
-For each of the three units, take a blank page and write down everything you remember without looking anything up. This finds your real gaps faster than re-reading ever will.
+Blank page, two columns: "Business Writing" and "Literature." Write everything you remember for each topic above without looking anything up. This finds real gaps faster than re-reading.
 
 ### Step 2 — Compare against the checklist
-Go back through this list and circle anything you couldn't recall. Those items get 2x review time, not the ones you already know.
+Circle anything you couldn't recall cleanly. Those get 2x review time — not the stuff you already have solid.
 
-### Step 3 — Full timed mock using the 4 sample questions
-Use your syllabus's own sample questions and simulate real conditions:
-- Set a timer for 1 hr 15 min
-- Answer all 4 as if it were the real exam (skip actual MCQs unless you have a set — focus timing on the subjective ones)
-- No notes, no pausing
+### Step 3 — Pick your "battle 8"
+Since you only answer 8 of 9, decide now which single topic (probably from the literature side, or whichever's weakest) you're comfortable skipping on exam day. Don't over-invest there; put that time elsewhere.
 
-### Step 4 — MCQ speed round
-Pull the Unit I/III/IV-relevant MCQs from your collection (skip the literature ones) and go through them once for speed, once for accuracy — see how many you get right without deliberating.
+### Step 4 — Full timed mock exam
+Use one full past paper (e.g., End-Sem Aug/Sep 2025) exactly as-is:
+- Set a timer for 2 hrs 30 min
+- Answer 8 of the 9 questions as formal, complete responses
+- No notes, no pausing, treat it like the real thing
 
-### Step 5 — Explain-it-out-loud pass
-For document design, Toulmin's model, and digital literacy — explain each concept out loud in your own words, like you're teaching it to a friend. If you stumble mid-sentence, that's a spot you don't actually know yet, just recognize.
+### Step 5 — MCQ speed round (if your exam includes Section A)
+Run through the full MCQ collection once for speed, once for accuracy. Note which categories you keep missing.
 
-### Step 6 — Write ONE full email + ONE full memo from scratch
-Timed, ~10 minutes each, no template in front of you. This is the skill most likely to appear as a full 5-mark question, and it's the easiest to fake-know until you actually try writing one cold.
+### Step 6 — Explain-it-out-loud pass on literature texts
+For each of the 9 texts, explain the core argument out loud in your own words like you're teaching it. Stumbling mid-sentence = you don't actually know it yet, no matter how familiar it feels.
 
-### Step 7 — Final review night before
-Re-read only the items you circled in Step 2. Don't re-study things you've already nailed — that's just anxiety management disguised as studying.
+### Step 7 — Write ONE full concept paper + ONE full proposal section cold
+Timed, ~15 minutes each, no template visible. These are the most frequently recurring business-writing questions — worth nailing under real time pressure before the actual exam.
+
+### Step 8 — Comparison paragraph drill
+Pick two random texts from your list and write a single comparative paragraph linking them on a shared theme (choice, illusion, acceptance, skepticism). Do this 2–3 times with different pairings — the paired-analysis question shows up almost every year and the skill transfers across whichever specific pair appears.
+
+### Step 9 — Final night review
+Only revisit what you circled in Step 2. Don't re-study what you've already nailed — that's anxiety management, not preparation.
