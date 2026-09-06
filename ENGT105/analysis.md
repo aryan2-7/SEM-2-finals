@@ -1,108 +1,100 @@
-# ENGT-105 Final Exam — Analysis
+# ENGT-105 Final Exam — Analysis (against official syllabus)
 
-**Format (based on End-Sem 2025 + archive papers):**
-- Time: 2 hrs 30 min
-- Full Marks: 40 (Section B alone: 8 questions × 5 marks = 40; some years also have a separate Section A MCQ component worth 10 marks / 20 MCQs — check your specific exam notice for whether MCQs are included this term)
-- Attempt **ANY EIGHT out of NINE** subjective questions
-- Every answer expected to be treated as a **formal document**
-
-**Sources analyzed:** End-Sem Aug/Sep 2025 paper, MCQ collection (2025 + 2024), Question Paper Archive (2016–2025, 5 full papers)
-
-This is the full-semester exam, so unlike the first internal, **all units and all literature texts are in scope.**
+**Format:** 2 hrs 30 min | 40 marks | Section B: 9 questions, attempt ANY 8 × 5 marks | every answer treated as a formal document
+**Full syllabus scope:** Units I–VI (48 hrs total). This is a full end-semester exam, so all six units are technically fair game — not just what your past papers happened to sample.
 
 ---
 
-## The two question "families" every past paper follows
+## Unit-by-unit official breakdown
 
-Every single archived paper (2016 through 2025) splits roughly into:
+| Unit | Topic | Hours | Weight signal |
+|---|---|---|---|
+| I | Technical Communication Basics | 6 | Low — foundational, quick concepts |
+| II | Research Communication | 10 | Medium-high — concept paper, proposal, citation |
+| III | Strategic/Rhetorical Communication | 14 | **Highest hours** — oral, digital, rhetorical strategies |
+| IV | Organizational and Business Communication | 8 | Medium — memo/letter/résumé/reports |
+| V | Design and Innovation | 12 | Medium-high — engineering-specific proposals/reports |
+| VI | Critical and Creative Thinking | 14 | **Highest hours** — reasoning, Toulmin, the 10 literary texts |
 
-1. **Business/technical writing tasks** (4–5 of the 9 questions) — résumé, memo, letter, email, proposal section, report outline, concept paper, PPT slides
-2. **Literary/rhetorical analysis** (4–5 of the 9 questions) — drawn from a fixed pool of texts, asking you to analyze theme, argument structure, or compare two works
-
-You need to be strong in **both families** since you must answer 8 of 9 — you can't dodge one family entirely.
-
----
-
-## 🔴 High Priority — Business/Technical Writing (recurs almost every year)
-
-### 1. Concept Paper
-Appears in **4 of 5** archived papers, nearly every single year in some form.
-- Must specify a research problem/question
-- Standard sections: Problem/Question → Objectives → Methodology → Timeline → Budget
-- Practice writing one from scratch on a generic engineering/social topic (sample topics have included mining, AI in disaster response, renewable energy, foreign employment)
-
-### 2. Proposal Writing (Introduction or Project Description section)
-Appears in **3–4 papers**. Know how to write just the **Introduction** section and just the **Project Description** section independently — past papers ask for one or the other, not the whole proposal.
-
-### 3. Report / Letter Outline Structure
-- Long Report outline: title page → executive summary/abstract → introduction → methodology → findings → conclusion → **appendices** (raw data, charts, memos)
-- Formal Letter: **8 essential + 5 optional components** — memorize this list explicitly, it's asked directly as "prepare a topic outline of all components and explain each"
-
-### 4. Résumé / Job Application Letter
-Full question in the March 2025 paper. Know both formats — a **resume** built from a candidate profile, and a **cover/job application letter** highlighting qualifications.
-
-### 5. Memo & Collaborative Messages
-- Memo format: heading (To/From/Date/Subject) → purpose → body → action requested
-- Collaborative message: task distribution, deadlines, accountability — this is basically a structured team email
-
-### 6. PPT / Oral Presentation Prep
-Asked as "prepare a model of X slides on topic Y" — you need to know **slide structure** (title, agenda, content points, conclusion) well enough to outline it in writing, since you can't actually build slides in an exam. Also: how to open a presentation (question/story, not script-reading), rehearsal importance.
-
-### 7. Toulmin's Model of Argumentation
-Appears in **3+ papers**, sometimes as its own question, sometimes embedded in argument-analysis questions.
-- **Claim** → what you're arguing
-- **Grounds/Data** → the evidence
-- **Warrant** → the logical link between grounds and claim
-- **Backing** → support for the warrant
-- Practice applying it to a real-world Nepali example (workforce, smoking ban, education) — these show up as both essay prompts and MCQ distractors
-
-### 8. Document Design (4 aspects)
-Slightly less central to the *final* than the internal, but still recurs: Organization, Order, Access, Variety — 2 examples each.
+Units III and VI carry the most instructional time — between them that's 28 of 48 hours, well over half the course. That tracks with what your past papers actually did: heavy on rhetorical strategy questions and literary text analysis.
 
 ---
 
-## 🔴 High Priority — Literature & Rhetorical Analysis
+## What your past papers covered vs. what the syllabus says is fair game
 
-You cannot skip this family; it's 40–50% of every paper. Know **each text's core argument/theme** well enough to write 300-word analytical answers.
+Your 5 archived papers + End-Sem 2025 draw almost entirely from Units II, III, IV, and VI. Two units barely showed up:
 
-| Text | Core idea to know cold |
-|---|---|
-| **"The Myth of Sisyphus" (Camus)** | Sisyphus is "happy" because he accepts the absurd and continues with defiance rather than despair — happiness comes from acceptance, not resolution |
-| **"The Allegory of the Cave" (Plato)** | Prisoners = people ignorant of true reality; the freed prisoner who returns is met with hostility/resistance, not gratitude |
-| **"Swan Song" (Chekhov)** | Svetlovidov (aging actor) reflects with regret on lost opportunities and personal failures; feels abandoned because fame is fleeting |
-| **"The Road Not Taken" (Frost)** | Ambiguous choice — the roads are nearly identical; theme is about how we retrospectively construct meaning from decisions |
-| **"We Are All Scientists" (Huxley)** | Everyday reasoning (hypothesis-forming) is instinctive and mirrors the scientific method; scientific mind = willingness to question and seek evidence |
-| **"The Making of a Scientist" (Ramachandran)** | Interdisciplinary thinking (blending science + poetry/philosophy) drives major breakthroughs; science and poetry both involve imaginative, unusual connections |
-| **"The Burden of Skepticism" (Sagan)** | Excessive skepticism risks rejecting valid new ideas too; balance is key to societal progress |
-| **"Letter to Einstein" (Freud)** | War can't be fully eliminated due to human instinct/nature; reducing it requires managing human instincts, not just treaties |
-| **Charles van Doren piece** | Links 20th-century physics/atomic advancements back to ancient Greek thought — know this connection for "is this logical?" style questions |
-
-### Recurring comparison/synthesis prompts
-Past papers love pairing two texts:
-- Frost vs. Chekhov — both about choices/regret
-- Camus vs. Plato — both about ignorance vs. enlightenment/escaping illusion
-- Narration technique across Ramachandran, Camus, and Plato
-
-**Practice:** write one comparative paragraph linking any two texts on a shared theme (choice, illusion, acceptance) — this pattern repeats almost every year.
+- **Unit V (Engineering Project proposals/reports)** — none of your uploaded papers had a question explicitly framed as an "Engineering Project" proposal/report, though the "Report Outline" and "Proposal" questions may be doing double duty here. Don't assume Unit V is skippable just because it wasn't isolated as its own question — it's 12 of 48 hours.
+- **Rhetorical strategies list from Unit III** (persuasion, process analysis, cause/effect, narrative analysis, division/classification, definition, description, comparison/contrast) — only cause/effect and narration showed up explicitly in past papers. The others (persuasion, classification, definition, description, comparison/contrast) haven't been directly tested in your sample but are named in the syllabus.
+- **2 of the 10 Unit VI texts never appeared** in any past paper you gave me: *"The Diamond as Big as the Ritz"* (Fitzgerald) and *"The Twentieth Century: Science and Technology"* (van Doren — note: van Doren *did* appear, but that may be a different/shorter excerpt than this specific text listed in the syllabus). Since past papers rotate which texts they draw from, these could easily be the ones tested this year specifically because they're "due."
 
 ---
 
-## 🟡 Medium Priority
+## 🔴 High Priority
 
-- Inductive vs. deductive reasoning (with a Nepal-context example — appears in MCQs)
-- Audience types (lay vs. expert) — carries over from Unit I
-- Digital literacy vs. social media use
-- APA citation basics
-- cc/bcc email etiquette, when to use a letter over an email
-- What belongs in appendices vs. executive summary (common "which is NOT" MCQ trap)
+### Unit VI — Critical and Creative Thinking (14 hrs, heaviest unit)
 
-## 🟢 Lower Priority / Fill-in-the-gaps only if time allows
+**Reasoning & argumentation**
+- Inductive vs. deductive reasoning — one Nepal-context example each
+- Toulmin's Model — claim, grounds, warrant, backing — practice on a real-world topic (workforce, smoking ban, education)
 
-- Gantt charts / progress reports (appeared once, in the 2016 paper)
-- Very old texts unique to 2016/2017 papers ("The Lunatic," "To Know a Fly," "Mr. Know-All") — these look like they were phased out of the current syllabus; skip unless your instructor confirmed they're still assigned
+**All 10 assigned texts — know each one's core argument, not just plot**
+
+| Text | Author | Core idea |
+|---|---|---|
+| "We Are All Scientists" | T.H. Huxley | Everyday reasoning mirrors scientific method; scientific mind questions and seeks evidence |
+| "The Making of a Scientist" | V.S. Ramachandran | Interdisciplinary thinking (science + poetry) drives breakthroughs |
+| **"The Diamond as Big as the Ritz"** ⚠️ untested in your past papers | F. Scott Fitzgerald | Critique of extreme wealth/isolation; satire on the American Dream — review this one specifically, it's a gap |
+| **"The Twentieth Century: Science and Technology"** ⚠️ untested | Charles van Doren | Links ancient Greek thought to 20th-century physics/atomic science |
+| "The Burden of Skepticism" | Carl Sagan | Excessive skepticism risks rejecting valid new ideas |
+| "Letter to Einstein" | Sigmund Freud | War can't be fully eliminated due to human instinct |
+| "The Allegory of the Cave" | Plato | Prisoners = ignorance; freed prisoner met with hostility on return |
+| "The Myth of Sisyphus" | Albert Camus | Happiness through acceptance of the absurd, not resolution |
+| "The Road Not Taken" | Robert Frost | Ambiguous choice; meaning constructed retrospectively |
+| "Swan Song" | Anton Chekhov | Aging actor's regret over lost opportunity and fleeting fame |
+
+**Comparison pairings that have recurred:** Frost vs. Chekhov (choice/regret), Camus vs. Plato (ignorance vs. enlightenment), narration technique across Ramachandran/Camus/Plato. Practice writing a comparative paragraph — this format repeats almost every year.
+
+### Unit III — Strategic/Rhetorical Communication (14 hrs, tied for heaviest)
+
+- Oral presentation: how to open (question/story, not script), rehearsal rationale, full process flow
+- Digital literacy vs. social media use — define both, argue they're not equivalent
+- Visual communication basics
+- Writing with collaborators — task distribution/deadline message format
+- **Rhetorical strategies (all 8, not just cause/effect):** persuasion, process analysis, cause and effect, narrative analysis, division and classification, definition, description, comparison and contrast — be able to name and briefly define each even if you only deep-practice 2–3
+
+### Unit II — Research Communication (10 hrs)
+
+- Concept paper — full structure (problem/question, objectives, methodology, timeline, budget) — this is your single most-recurring question type across 4+ years of papers
+- Research proposal — Introduction section and Project Description section, practiced independently
+- Documentation and reference style (APA basics — author, year, italicized title, publisher)
+- Technical articles — structure/purpose
+
+### Unit V — Design and Innovation (12 hrs) ⚠️ your weakest-covered unit
+
+- Engineering project proposal structure — likely overlaps heavily with the general "proposal" questions you've seen, but frame your practice specifically around an *engineering* project this time (not just any topic)
+- Engineering project report structure — same overlap caveat; practice one explicitly framed as reporting on an engineering project outcome
+
+### Unit IV — Organizational and Business Communication (8 hrs)
+
+- Memo, letter, email — formats and when to use which
+- Formal letter — 8 essential + 5 optional components
+- Résumé and job application letter
+- Internal proposals and internal reports — outline structure, appendices vs. executive summary
+- Writing for e-media
+
+---
+
+## 🟡 Unit I — Technical Communication Basics (6 hrs, lightest unit)
+
+Quick-review only — lowest hour allocation, least likely to anchor a full 5-mark question on its own, more likely to appear blended into another answer or as an MCQ:
+- Objectives of technical communication
+- Audience types (lay vs. expert)
+- The writing process stages
+- Document design — 4 aspects (organization, order, access, variety)
 
 ---
 
 ## Bottom line strategy
 
-Since you answer **8 of 9**, plan to have a strong, confident 5–6 answers in each family so you have flexibility to skip whichever single question looks hardest on exam day, rather than being forced to answer a weak topic because you only prepped 4 of each.
+Since you answer 8 of 9, and the syllabus confirms Units III and VI dominate the course hours, your safest bet is having rock-solid answers ready across **all 10 literary texts**, **Toulmin's model**, and **concept paper/proposal writing** — that combination alone could plausibly cover 6+ of the 9 questions in any given year. Fill the remaining slots with Unit IV business writing and at least one Unit V engineering-specific proposal/report practice, since that's the unit your past papers under-represent.
