@@ -1,5 +1,97 @@
 const UNITS = [
   {
+    id: "start",
+    label: "Start here",
+    title: "Finals in 3 days — battle plan",
+    desc: "Your exam format, 3-day schedule, and the 8-of-9 answering system",
+    topics: [
+      {
+        id: "three-day-plan",
+        title: "Your 3-day study schedule",
+        freq: "high",
+        summary: "Three tickable days below — roughly 5 focused hours a day. Tick tasks off as you finish; progress is saved on this device and mirrored in the hero meter up top.",
+        exam: "Format reminder — 2 hrs 30 min, 40 marks, Section B has 9 questions and you answer ANY 8 × 5 marks. Every answer is treated as a formal document.",
+        html: `
+          <p>Priority order follows syllabus weight (III + VI = 28 of 48 hours) and your gaps — Units II, V, VI are missing from your class notes, so this site is your only source for them. End every session by <strong>writing</strong>, not re-reading.</p>
+
+          <div class="day-card" data-day="1">
+            <div class="day-head">
+              <div class="day-num">1</div>
+              <div class="day-title">Texts + reasoning<span>Unit VI — heaviest unit, biggest payoff</span></div>
+              <div class="day-prog" data-day-prog>0 / 3</div>
+            </div>
+            <div class="day-bar"><span class="day-fill" data-day-fill></span></div>
+            <label class="task"><input type="checkbox" data-task="d1a"><span class="t"><b class="tt">Reasoning duo.</b> Inductive vs deductive (one Nepal example each) + one worked Toulmin chain.</span><span class="est">1 h</span></label>
+            <label class="task"><input type="checkbox" data-task="d1b"><span class="t"><b class="tt">Texts group A, out loud.</b> Huxley, Ramachandran, Fitzgerald, van Doren, Sagan — one core argument each, taught to an imaginary friend.</span><span class="est">2 h</span></label>
+            <label class="task"><input type="checkbox" data-task="d1c"><span class="t"><b class="tt">Texts group B, out loud.</b> Freud, Plato, Camus, Frost, Chekhov. Extra pass on <strong>Fitzgerald + van Doren</strong> — never tested, statistically due.</span><span class="est">2 h</span></label>
+          </div>
+
+          <div class="day-card" data-day="2">
+            <div class="day-head">
+              <div class="day-num">2</div>
+              <div class="day-title">Proposals + gaps<span>Units II, V and the Unit IV leftovers</span></div>
+              <div class="day-prog" data-day-prog>0 / 4</div>
+            </div>
+            <div class="day-bar"><span class="day-fill" data-day-fill></span></div>
+            <label class="task"><input type="checkbox" data-task="d2a"><span class="t"><b class="tt">Concept paper, cold.</b> Full skeleton (problem → objectives → method → timeline → budget) in ∼15 min, no notes.</span><span class="est">1.5 h</span></label>
+            <label class="task"><input type="checkbox" data-task="d2b"><span class="t"><b class="tt">Proposal sections.</b> One Introduction + one Project Description, practiced standalone.</span><span class="est">1 h</span></label>
+            <label class="task"><input type="checkbox" data-task="d2c"><span class="t"><b class="tt">Engineering pair.</b> One engineering proposal + one report skeleton (campus solar heater). APA + technical articles at checklist level.</span><span class="est">1.5 h</span></label>
+            <label class="task"><input type="checkbox" data-task="d2d"><span class="t"><b class="tt">Unit IV holes.</b> Letter 8+5, cc vs bcc, one application-letter skeleton.</span><span class="est">1 h</span></label>
+          </div>
+
+          <div class="day-card" data-day="3">
+            <div class="day-head">
+              <div class="day-num">3</div>
+              <div class="day-title">Output only<span>No new input — retrieval day</span></div>
+              <div class="day-prog" data-day-prog>0 / 3</div>
+            </div>
+            <div class="day-bar"><span class="day-fill" data-day-fill></span></div>
+            <label class="task"><input type="checkbox" data-task="d3a"><span class="t"><b class="tt">Brain dump.</b> Blank page, six sections, everything remembered. Circle gaps — those get 2× time, nothing else.</span><span class="est">45 m</span></label>
+            <label class="task"><input type="checkbox" data-task="d3b"><span class="t"><b class="tt">Timed mock.</b> One past paper, 8 of 9, 2 hrs 30 min, no notes, no pausing.</span><span class="est">2.5 h</span></label>
+            <label class="task"><input type="checkbox" data-task="d3c"><span class="t"><b class="tt">Circled gaps only.</b> Then sleep — it beats re-reading.</span><span class="est">1 h</span></label>
+          </div>
+
+          <div class="example-box"><div class="ex-label">Golden rule</div>
+          Studying is not retrieval. The exam needs full, formal 5-mark answers under time pressure.</div>
+        `
+      },
+      {
+        id: "battle-8",
+        title: "The battle-8 answering system",
+        freq: "high",
+        summary: "You answer 8 of 9, so decide your skip in advance, budget ∼18 minutes per answer, and build every 5-mark response from the same four-part skeleton: define, structure, example, close.",
+        exam: "Covers the exam-hall skill itself — time budgeting (150 min ÷ 8), picking your skip, and the formal-document standard every answer is judged by.",
+        html: `
+          <p>9 questions × 5 marks, attempt any 8. That means you can afford exactly <strong>one weak area</strong> — pick it deliberately (the unit weakest after your Day-3 brain dump), under-invest there, redirect that time to strengths.</p>
+
+          <h4>The 5-mark skeleton (use for every answer)</h4>
+          <ol>
+            <li><strong>Define</strong> (1 mark) — open with a crisp textbook definition.</li>
+            <li><strong>Structure</strong> (2 marks) — lay out the components/steps/table. Examiners scan for structure first.</li>
+            <li><strong>Example</strong> (1 mark) — one concrete, preferably Nepal/engineering-flavoured example.</li>
+            <li><strong>Close</strong> (1 mark) — one-line significance or application. Never trail off mid-list.</li>
+          </ol>
+
+          <h4>Time budget</h4>
+          <table>
+            <tr><th>Block</th><th>Time</th></tr>
+            <tr><td>Reading + picking your 8 + skip decision</td><td>10 min</td></tr>
+            <tr><td>Each answer (8 × ∼17 min)</td><td>135 min</td></tr>
+            <tr><td>Reserve: numbering, underlining key terms, final scan</td><td>5 min</td></tr>
+          </table>
+
+          <h4>Formal-document discipline</h4>
+          <ul>
+            <li>Number answers exactly as in the paper; start each on a fresh page.</li>
+            <li>Underline key terms, use headings and lists — presentation is part of the mark in this subject.</li>
+            <li>For writing tasks (memo, letter, proposal, concept paper), <strong>format first</strong>: headings and sections down before a single sentence.</li>
+          </ul>
+        `
+      }
+    ]
+  },
+
+  {
     id: "unit1",
     label: "Unit I",
     title: "Technical Communication Basics",
@@ -163,6 +255,137 @@ const UNITS = [
 
           <h4>Collaborative evaluation / usability testing</h4>
           <p>Reviewing your own text gives limited perspective — peer review catches what you can't see. Usability testing focuses on: <strong>retrievability, readability, accuracy, user satisfaction.</strong></p>
+        `
+      }
+    ]
+  },
+
+  {
+    id: "unit2",
+    label: "Unit II",
+    title: "Research Communication",
+    desc: "Concept paper, research proposal, APA documentation, technical articles",
+    topics: [
+      {
+        id: "concept-paper",
+        title: "Concept paper — full structure",
+        freq: "high",
+        summary: "The single most-recurring question type in 4+ years of papers: problem/question, objectives, methodology, timeline, budget. Memorize the skeleton, then practice writing one cold in ∼15 minutes.",
+        exam: "Direct 5-mark writing task across multiple past papers — often phrased as “write a concept paper on …”. Examiners check section headings first, content second.",
+        html: `
+          <p>A <strong>concept paper</strong> is a short pre-proposal: it sells the <em>idea</em> of a study before full resources are committed. Purpose: convince a reader the problem is real, researchable, and worth funding — in 2–4 pages.</p>
+
+          <h4>Full structure (memorize this order)</h4>
+          <table>
+            <tr><th>Section</th><th>What goes in it</th></tr>
+            <tr><td>Title</td><td>Concise, variable-revealing, no abbreviations</td></tr>
+            <tr><td>Background / Problem statement</td><td>Context → gap → the research question. Why this problem, why now, for whom</td></tr>
+            <tr><td>Objectives</td><td>General objective + 3–4 specific, measurable objectives</td></tr>
+            <tr><td>Methodology</td><td>Design, population/sample, data collection, analysis tools — brief but concrete</td></tr>
+            <tr><td>Timeline</td><td>Phased table (months 1–2, 3–4 …) — shows feasibility</td></tr>
+            <tr><td>Budget</td><td>Headline items with rough costs — shows planning honesty</td></tr>
+            <tr><td>Expected outcomes / Significance</td><td>Who benefits and how; one-line closing pitch</td></tr>
+          </table>
+
+          <h4>15-minute drill skeleton (fill cold)</h4>
+          <p>Title → Problem (3 lines: context, gap, question) → 3 objectives → Method (design + sample + tools, 4 lines) → 4-phase timeline → 4-item budget → 2-line significance. Headings down first, then sentences.</p>
+
+          <div class="example-box"><div class="ex-label">Model opening (adapt freely)</div>
+          “Plastic waste clogs the Bagmati corridor and municipal collection covers under 60% of riverside wards (context). No ward-level segregation data exists for Kathmandu's riverbank settlements (gap). This study asks: what segregation model is feasible for riverside wards 11–13? (question)”</div>
+        `
+      },
+      {
+        id: "research-proposal",
+        title: "Research proposal — Introduction + Project Description",
+        freq: "high",
+        summary: "A step up from the concept paper: full proposal with Introduction (background, problem, objectives, significance) and Project Description (methodology, work plan, budget). Practice each section standalone — papers test them separately.",
+        exam: "Past papers split this: “write the Introduction section of a proposal on …” or “write the Project Description section” as independent 5-mark tasks.",
+        html: `
+          <p>A <strong>research proposal</strong> requests approval/funding for a complete study. It answers three examiner questions: <strong>what</strong> (Introduction), <strong>how</strong> (Project Description), and <strong>why trust you</strong> (method + plan + budget detail).</p>
+
+          <h4>Full proposal structure</h4>
+          <ol>
+            <li>Title page + Abstract (100–150 words, written last)</li>
+            <li><strong>Introduction</strong> — background, problem statement, objectives, research questions/hypotheses, significance, scope and limitations</li>
+            <li>Literature review — what is already known, where the gap is</li>
+            <li><strong>Project Description</strong> — research design, methodology, work plan/timeline, budget, personnel, expected outcomes</li>
+            <li>References (APA)</li>
+          </ol>
+
+          <h4>Writing the Introduction (standalone 5-mark answer)</h4>
+          <ul>
+            <li>Background: 3–4 lines narrowing from field → context → gap</li>
+            <li>Problem statement: one crisp paragraph ending in the research question</li>
+            <li>Objectives: general + specific (SMART verbs: assess, compare, design, measure)</li>
+            <li>Significance + scope: who benefits, what is excluded</li>
+          </ul>
+
+          <h4>Writing the Project Description (standalone 5-mark answer)</h4>
+          <ul>
+            <li>Methodology: design (survey/experimental/field), sample, instruments, analysis</li>
+            <li>Work plan: phased timeline table — feasibility is what is being marked</li>
+            <li>Budget + personnel: itemized, realistic, matched to phases</li>
+            <li>Expected outcomes: deliverables (report, prototype, dataset)</li>
+          </ul>
+
+          <div class="example-box"><div class="ex-label">Exam tip</div>
+          If asked for one section only, still open with a one-line title + objective so the answer reads as a document, not an essay fragment. Headings are marks.</div>
+        `
+      },
+      {
+        id: "documentation-apa",
+        title: "Documentation and reference — APA basics",
+        freq: "med",
+        summary: "Author, year, italicized title, publisher. In-text citations plus an alphabetical reference list with hanging indent. Accuracy here is also the MCQ angle — it ensures legal and safety compliance.",
+        exam: "Appears as short-note/MCQ material (“accuracy ensures legal/safety compliance”) and as a correctness check inside proposal/report answers.",
+        html: `
+          <p><strong>Documentation</strong> means crediting every source so claims are verifiable and plagiarism is avoided. In engineering it is also a safety/legal matter: an un-cited figure or procedure cannot be audited.</p>
+
+          <h4>APA pattern (what the examiner wants to see)</h4>
+          <ul>
+            <li><strong>In-text:</strong> (Author, year) — e.g. (Gerson, 2017). Direct quote adds page: (Gerson, 2017, p. 42).</li>
+            <li><strong>Reference list:</strong> alphabetical by surname, hanging indent, pattern:<br><em>Author, A. (Year). Title in italics. Publisher.</em></li>
+            <li>Journal article adds journal + volume: <em>Author, A. (Year). Article title. Journal Title, volume, pages.</em></li>
+          </ul>
+
+          <div class="example-box"><div class="ex-label">Model entries</div>
+          Laplante, P. A. (2012). <em>Technical Writing: A Practical Guide for Engineers and Scientists.</em> CRS Press.<br>
+          Gerson, S. J., &amp; Gerson, S. M. (2017). <em>Technical Communication: Process and Product.</em> Pearson.</div>
+
+          <h4>Common mark-losers</h4>
+          <ul>
+            <li>Year in the wrong place (APA puts it right after the author)</li>
+            <li>Book titles not italicized / article titles wrongly italicized (only the container is)</li>
+            <li>Reference list not alphabetical, or cited sources missing from the list</li>
+          </ul>
+        `
+      },
+      {
+        id: "technical-articles",
+        title: "Technical articles — structure and purpose",
+        freq: "low",
+        summary: "Peer-reviewed dissemination of findings: title, abstract, keywords, introduction, method, results, discussion, conclusion, references. Know the skeleton and the one-line purpose — that is the whole 5-mark answer.",
+        exam: "Short-note level: “structure and purpose of a technical article” rather than a full writing task.",
+        html: `
+          <p>A <strong>technical article</strong> publishes original findings for a specialist audience so results can be scrutinized, replicated, and built upon. Unlike reports (written for a client) or proposals (written to request), articles are written for <strong>peers</strong>.</p>
+
+          <h4>Standard structure</h4>
+          <ol>
+            <li><strong>Title</strong> — precise, keyword-rich, no abbreviations</li>
+            <li><strong>Abstract</strong> (100–200 words) — purpose, method, key result, conclusion; written last</li>
+            <li><strong>Keywords</strong> — 4–6 indexing terms</li>
+            <li><strong>Introduction</strong> — background, gap, objective</li>
+            <li><strong>Methodology</strong> — enough detail for replication</li>
+            <li><strong>Results</strong> — data only, tables/figures numbered and titled</li>
+            <li><strong>Discussion</strong> — what results mean, limits, comparison with prior work</li>
+            <li><strong>Conclusion + References</strong></li>
+          </ol>
+
+          <h4>One-line differentiators (exam-ready)</h4>
+          <ul>
+            <li>Article vs report: peers vs client; replication detail vs actionable recommendations</li>
+            <li>Article vs proposal: completed work vs requested work; past tense vs future tense</li>
+          </ul>
         `
       }
     ]
@@ -763,6 +986,334 @@ const UNITS = [
 
           <h4>Report writing checklist (quick self-check)</h4>
           <p>Title page complete? Acknowledgements given? Contents lists all sections + illustrations? Abstract states task/methods/conclusions/recommendations? Introduction gives terms of reference, limits, method outline, background? Methodology explains data collection? Findings clearly labeled and linked to text? Discussion identifies key issues with a balanced view? Conclusions avoid new information? References accurate and complete? Appendices contain only supporting (non-essential) material?</p>
+        `
+      },
+      {
+        id: "formal-letter-email",
+        title: "Formal letter + email + e-media",
+        freq: "high",
+        summary: "Letter: 8 essential + 5 optional components. Email: To/Cc/Bcc, subject, concise body, action close. Know when a letter is required instead — and the e-media rules of scannability and tone.",
+        exam: "Classic 5-mark formats: “list the components of a formal letter”, “write a letter to …”, “email etiquette / cc vs bcc”, “writing for e-media”.",
+        html: `
+          <p>Letters are <strong>external and formal</strong> (outside the organization, legal weight, permanent record). Emails are <strong>fast and internal-first</strong>. E-media writing adapts both to screens. The examiner tests whether you can pick the right channel and format it exactly.</p>
+
+          <h4>Formal letter — 8 essential components (in order)</h4>
+          <ol>
+            <li><strong>Sender's address (heading)</strong> — top, no name</li>
+            <li><strong>Date</strong> — below heading</li>
+            <li><strong>Inside address</strong> — receiver's name, title, organization, address</li>
+            <li><strong>Salutation</strong> — Dear Mr./Ms./Dr. [Surname]</li>
+            <li><strong>Subject line</strong> — Re: + concise purpose</li>
+            <li><strong>Body</strong> — opening (purpose), middle (details), closing (action requested)</li>
+            <li><strong>Complimentary close</strong> — Yours sincerely (known recipient) / Yours faithfully (unknown)</li>
+            <li><strong>Signature block</strong> — signature + printed name + designation</li>
+          </ol>
+
+          <h4>5 optional components</h4>
+          <ul>
+            <li><strong>Attention line</strong> (Attention: HR Manager)</li>
+            <li><strong>Reference initials</strong> (typist/author codes)</li>
+            <li><strong>Enclosure notation</strong> (Encl: résumé, certificates)</li>
+            <li><strong>CC notation</strong> (who else receives a copy)</li>
+            <li><strong>Postscript (P.S.)</strong> — one emphasized afterthought only</li>
+          </ul>
+
+          <h4>Email structure + cc vs bcc</h4>
+          <ul>
+            <li><strong>Subject</strong> — specific and searchable (“Request: survey permission, Ward 11 — reply by Friday”)</li>
+            <li><strong>Greeting → one-screen body → action close → signature</strong></li>
+            <li><strong>To:</strong> action owners. <strong>Cc:</strong> people who must stay informed (visible to all). <strong>Bcc:</strong> confidential copies (hidden — use for privacy, never for secrecy games).</li>
+            <li>One topic per mail, attachments named and mentioned, reply-all only when everyone needs it.</li>
+          </ul>
+
+          <h4>Letter instead of email when…</h4>
+          <p>External/formal audiences, legal or contractual content, complaints and claims, job applications, or anything needing signature and record. Speed favors email; gravity favors the letter.</p>
+
+          <h4>Writing for e-media</h4>
+          <ul>
+            <li>Front-load: conclusion first, details after (screens get scanned, not read)</li>
+            <li>Short paragraphs, descriptive headings, bullets, meaningful links</li>
+            <li>One idea per screen; neutral professional tone — no irony, no all-caps</li>
+          </ul>
+        `
+      },
+      {
+        id: "job-application-letter",
+        title: "Job application letter",
+        freq: "med",
+        summary: "Pairs with your résumé: reference the advertised post, match 2–3 qualifications to requirements in the middle, close by requesting an interview and listing enclosures. One page, formal-letter format.",
+        exam: "“Write a job application letter for the post of … enclosing your résumé” — marked on format + requirement-matching, not biography.",
+        html: `
+          <p>The <strong>application letter (cover letter)</strong> is a formal letter whose product is <em>you</em>. It never repeats the résumé — it <strong>matches</strong> selected qualifications to the advertised requirements and asks for an interview.</p>
+
+          <h4>Skeleton (formal-letter format)</h4>
+          <ol>
+            <li><strong>Opening</strong> — post applied for, where advertised, date: “With reference to your advertisement in … dated …, I apply for the post of Junior Engineer.”</li>
+            <li><strong>Middle (2 short paragraphs)</strong> — qualification match: degree + institution; 2–3 strongest fits (project, internship, software, site experience). Mirror the ad's own keywords.</li>
+            <li><strong>Closing</strong> — request an interview, state availability, list enclosures: “I shall welcome an interview at your convenience. Encl: résumé, transcripts, experience letter.”</li>
+          </ol>
+
+          <div class="example-box"><div class="ex-label">Middle-paragraph model</div>
+          “I completed my BE in Civil Engineering from IOE in 2025 with first division. During my internship with a Kathmandu road-upgrading project I prepared quantity estimates and supervised drainage works, and I am proficient in AutoCAD and QGIS — directly relevant to your requirements for site supervision and drawing review.”</div>
+
+          <h4>Mark-losers to avoid</h4>
+          <ul>
+            <li>Retelling your whole life story instead of matching 2–3 requirements</li>
+            <li>Missing enclosure line while claiming documents are attached</li>
+            <li>Casual tone or email shorthand in a formal letter</li>
+          </ul>
+        `
+      }
+    ]
+  },
+
+  {
+    id: "unit5",
+    label: "Unit V",
+    title: "Design and Innovation",
+    desc: "Engineering project proposals and engineering project reports",
+    topics: [
+      {
+        id: "eng-project-proposal",
+        title: "Engineering project proposal",
+        freq: "high",
+        summary: "Same proposal DNA as Unit II/IV, reframed around an engineering build: problem, objectives, scope, methodology, Gantt timeline, budget, expected deliverables. Practice one full skeleton on a campus-scale project.",
+        exam: "12 syllabus hours with almost no past-paper presence — the most likely “new” question. Examiners check engineering specificity: drawings, testing, materials, standards.",
+        html: `
+          <p>An <strong>engineering project proposal</strong> requests approval/resources to <em>build or implement</em> something. Unlike a research proposal (which promises knowledge), it promises a <strong>working deliverable</strong> — prototype, installation, system — with drawings, materials, testing, and cost.</p>
+
+          <h4>Full structure (engineering-framed)</h4>
+          <table>
+            <tr><th>Section</th><th>Engineering content</th></tr>
+            <tr><td>Title + Abstract</td><td>What will be built, for whom, at what cost — in half a page</td></tr>
+            <tr><td>Background / Problem</td><td>Site, users, measured problem (loads, shortages, failures)</td></tr>
+            <tr><td>Objectives</td><td>Functional targets with numbers (capacity, efficiency, cost ceiling)</td></tr>
+            <tr><td>Scope (in + out)</td><td>Explicit inclusions/exclusions — shows engineering honesty</td></tr>
+            <tr><td>Methodology</td><td>Design, calculations/standards, materials, fabrication, testing plan</td></tr>
+            <tr><td>Work plan (Gantt)</td><td>Phased bars: design → procurement → build → test → handover</td></tr>
+            <tr><td>Budget</td><td>Materials, labour, testing, contingency (∼10%)</td></tr>
+            <tr><td>Expected outcomes</td><td>Deliverable + performance figures + maintenance note</td></tr>
+          </table>
+
+          <div class="example-box"><div class="ex-label">Worked mini-skeleton — solar water heater, hostel block</div>
+          Problem: 200 residents, electric geysers overload the morning feeder. Objective: 500 L/day at ≥50°C by solar pre-heating, cutting geyser load 60%. Method: flat-plate collectors (IS-standard sizing), insulated storage, thermosiphon loop; test: week-long temperature logging. Timeline: design 2 wks → procurement 2 wks → install 3 wks → test 1 wk. Budget: collectors, tank, piping, labour + 10% contingency. Outcome: commissioned system + O&amp;M manual.</div>
+        `
+      },
+      {
+        id: "eng-project-report",
+        title: "Engineering project report",
+        freq: "high",
+        summary: "Reports completed work in past tense: what was built, test results vs targets, deviations, conclusions, recommendations. Know the proposal-vs-report table and the executive-summary-vs-appendices distinction cold.",
+        exam: "Pairs with the proposal question — “write the report of the completed project” — or appears as outline + difference questions.",
+        html: `
+          <p>An <strong>engineering project report</strong> documents a <em>finished</em> build: what was specified, what was actually achieved, what tests proved, and what should happen next. Tense shifts to past; claims need measured evidence.</p>
+
+          <h4>Proposal vs report (favorite examiner table)</h4>
+          <table>
+            <tr><th>Proposal</th><th>Report</th></tr>
+            <tr><td>Future tense — what <em>will</em> be done</td><td>Past tense — what <em>was</em> done</td></tr>
+            <tr><td>Persuades: approve/fund this</td><td>Informs: here is what happened and proved</td></tr>
+            <tr><td>Estimated cost and schedule</td><td>Actual cost and schedule, with deviations explained</td></tr>
+            <tr><td>Expected outcomes</td><td>Measured results vs targets + test data</td></tr>
+          </table>
+
+          <h4>Report structure (engineering-framed)</h4>
+          <ol>
+            <li>Title page → Abstract / <strong>Executive summary</strong> (whole project in one page: objective, method, headline results, recommendation)</li>
+            <li>Introduction (background, objectives, scope)</li>
+            <li>Methodology (design, standards, materials, build steps)</li>
+            <li>Results (measured data, tables/figures — targets vs achieved)</li>
+            <li>Discussion (deviations and why: late delivery, substituted pump, revised pipe run)</li>
+            <li>Conclusions and recommendations (no new information; O&amp;M + scale-up notes)</li>
+            <li>References → <strong>Appendices</strong> (datasheets, logs, drawings — supporting only)</li>
+          </ol>
+
+          <div class="example-box"><div class="ex-label">Appendices vs executive summary</div>
+          The <strong>executive summary</strong> is for the decision-maker who reads nothing else. <strong>Appendices</strong> are for the specialist who wants everything else. The report's argument must never <em>depend</em> on the reader opening an appendix.</div>
+        `
+      }
+    ]
+  },
+
+  {
+    id: "unit6",
+    label: "Unit VI",
+    title: "Critical and Creative Thinking",
+    desc: "Reasoning, Toulmin argumentation, and the 10 literary texts",
+    topics: [
+      {
+        id: "inductive-deductive",
+        title: "Inductive vs deductive reasoning",
+        freq: "high",
+        summary: "Induction: specific observations → general rule (probable). Deduction: general rule → specific conclusion (certain if premises hold). Give one Nepal-context example of each plus the comparison table.",
+        exam: "Straight 5-mark theory question, often “differentiate with examples”. Nepal-flavoured examples score — the examiner rewards local application.",
+        html: `
+          <p><strong>Reasoning</strong> is drawing conclusions from evidence. The two directions mirror each other — induction generalizes upward from cases, deduction applies downward from rules.</p>
+
+          <h4>Inductive reasoning (bottom-up)</h4>
+          <p>From <strong>specific observations to a general conclusion</strong>. Conclusion is <em>probable</em>, never certain — one counter-case can break it.</p>
+          <div class="example-box"><div class="ex-label">Nepal-context example</div>
+          “Meter readings in three Kathmandu wards show evening demand spiking 40% during load-shedding months (observations). Therefore, residential evening demand across the Valley likely follows the same outage-driven pattern (generalization) — to be confirmed by wider metering.”</div>
+
+          <h4>Deductive reasoning (top-down)</h4>
+          <p>From a <strong>general rule to a specific conclusion</strong>. If premises are true and form valid, the conclusion is <em>certain</em>.</p>
+          <div class="example-box"><div class="ex-label">Nepal-context example</div>
+          “All structures in seismic zone V detailing must provide ductile beam-column joints (rule). This Pokhara school block uses zone V detailing (case). Therefore it must provide ductile joints (certain conclusion).”</div>
+
+          <h4>Comparison table (write this in the exam)</h4>
+          <table>
+            <tr><th>Inductive</th><th>Deductive</th></tr>
+            <tr><td>Specific → general</td><td>General → specific</td></tr>
+            <tr><td>Conclusion probable, revisable</td><td>Conclusion certain if premises true</td></tr>
+            <tr><td>Discovers new patterns (surveys, field data)</td><td>Applies known rules (codes, laws, syllogisms)</td></tr>
+            <tr><td>Risk: hasty generalization</td><td>Risk: false premise</td></tr>
+          </table>
+        `
+      },
+      {
+        id: "toulmin-model",
+        title: "Toulmin's Model of argumentation",
+        freq: "high",
+        summary: "Claim, grounds, warrant, backing (+ qualifier, rebuttal). The exam wants one worked example on a real topic — memorize the six slots and fill them on workforce, smoking ban, or compulsory internship.",
+        exam: "“Explain Toulmin's Model with an example” — a full 5-mark answer from just six labelled parts plus one concrete chain.",
+        html: `
+          <p>Stephen Toulmin breaks any argument into six slots. In the exam, <strong>name all six, then fill four deeply</strong> (claim, grounds, warrant, backing) with one running example.</p>
+
+          <h4>The six slots</h4>
+          <table>
+            <tr><th>Slot</th><th>Role</th></tr>
+            <tr><td><strong>Claim</strong></td><td>The conclusion you defend</td></tr>
+            <tr><td><strong>Grounds (data)</strong></td><td>Facts/evidence the claim rests on</td></tr>
+            <tr><td><strong>Warrant</strong></td><td>The bridge: why grounds support the claim (often unstated — stating it is the skill)</td></tr>
+            <tr><td><strong>Backing</strong></td><td>Support for the warrant itself: law, study, authority, code</td></tr>
+            <tr><td><strong>Qualifier</strong></td><td>Strength limiters: usually, likely, in urban sites</td></tr>
+            <tr><td><strong>Rebuttal</strong></td><td>Conditions where the claim fails: unless, except when</td></tr>
+          </table>
+
+          <div class="example-box"><div class="ex-label">Worked example — compulsory internship</div>
+          <strong>Claim:</strong> IOE should make a semester-long industry internship compulsory.<br>
+          <strong>Grounds:</strong> 2024 placement data shows interned graduates placed 35% faster.<br>
+          <strong>Warrant:</strong> Structured industry exposure builds the site skills employers actually hire for.<br>
+          <strong>Backing:</strong> The engineering council's graduate attributes list supervised practice as core; neighbouring universities with compulsory practice report the same gap closure.<br>
+          <strong>Qualifier:</strong> At least for civil, electronics, and computer programs initially.<br>
+          <strong>Rebuttal:</strong> Unless a department demonstrates equivalent outcomes through its existing field-work sequence.</div>
+        `
+      },
+      {
+        id: "texts-a",
+        title: "The 10 texts I — Huxley to Sagan",
+        freq: "high",
+        summary: "Core argument of each text in one line, plus exam angles. Priority flags: Fitzgerald and van Doren never appeared in your past papers — they are due. Explain each out loud like teaching a friend.",
+        exam: "“Discuss the core argument of …” or short-note + comparison formats. One text per answer: core idea → key moves → one-line significance.",
+        html: `
+          <p>Method: for each text learn <strong>one core sentence</strong>, two supporting moves, and one significance line. Stumbling when explaining out loud means you do not know it yet.</p>
+
+          <h4>1. T. H. Huxley — “We Are All Scientists”</h4>
+          <p><strong>Core:</strong> everyday reasoning already mirrors the scientific method — science is trained common sense, not a priesthood.</p>
+          <ul>
+            <li>Observes, hypothesizes, tests in daily life (is the stove hot?) exactly as labs do, only less systematically.</li>
+            <li>Defends scientific thinking as questioning + evidence-seeking open to everyone.</li>
+            <li>Exam angle: pair with Sagan (method vs misuse of doubt) or Ramachandran (breadth of the scientific mind).</li>
+          </ul>
+
+          <h4>2. V. S. Ramachandran — “The Making of a Scientist”</h4>
+          <p><strong>Core:</strong> breakthroughs come from interdisciplinary thinking — science fused with poetry, art, and play.</p>
+          <ul>
+            <li>Narration technique itself is the lesson: stories, curiosity, and cross-field leaps.</li>
+            <li>Exam angle: narration-technique comparisons with Camus/Plato; choice-vs-regret bridges to Frost/Chekhov.</li>
+          </ul>
+
+          <h4>3. F. Scott Fitzgerald — “The Diamond as Big as the Ritz” ⚠️ untested, high alert</h4>
+          <p><strong>Core:</strong> satire of extreme wealth and isolation — a mountain of diamond corrupts absolutely; a critique of the American Dream.</p>
+          <ul>
+            <li>The Washingtons' secrecy, extravagance, and moral rot; wealth buys everything except escape from consequence.</li>
+            <li>Exam angle: most likely “summarize the core argument / theme” precisely because it never appeared — prepare a one-paragraph theme statement.</li>
+          </ul>
+
+          <h4>4. Charles van Doren — “The Twentieth Century: Science and Technology” ⚠️ possibly new excerpt</h4>
+          <p><strong>Core:</strong> links ancient Greek thought to 20th-century physics and atomic science — modern breakthroughs continue a classical questioning tradition.</p>
+          <ul>
+            <li>Note: van Doren appeared in past papers but possibly a different/shorter excerpt — prepare the <em>listed</em> text's arc (Greece → modern physics), not just the old excerpt.</li>
+          </ul>
+
+          <h4>5. Carl Sagan — “The Burden of Skepticism”</h4>
+          <p><strong>Core:</strong> skepticism is essential but excessive skepticism rejects valid new ideas — balance doubt with openness.</p>
+          <ul>
+            <li>Exam angle: natural pair with Huxley (scientific temper) and Freud (limits of reason against instinct).</li>
+          </ul>
+        `
+      },
+      {
+        id: "texts-b",
+        title: "The 10 texts II — Freud to Chekhov",
+        freq: "high",
+        summary: "Freud on war and instinct, Plato's Cave, Camus on the absurd, Frost on retrospective choice, Chekhov on regret. Same method: one core sentence each, then comparison-ready significance lines.",
+        exam: "Same formats as group A. Frost-vs-Chekhov (choice/regret) and Camus-vs-Plato (ignorance/enlightenment) are the recurring comparison pairings.",
+        html: `
+          <h4>6. Sigmund Freud — “Letter to Einstein”</h4>
+          <p><strong>Core:</strong> war cannot be fully eliminated because human instinct (aggression, the death drive) persists beneath civilization.</p>
+          <ul>
+            <li>Reason and law can redirect instinct but never abolish it — cultural development only strengthens the counter-forces.</li>
+            <li>Exam angle: pair with Sagan (reason's limits) or Camus (endurance without resolution).</li>
+          </ul>
+
+          <h4>7. Plato — “The Allegory of the Cave”</h4>
+          <p><strong>Core:</strong> prisoners mistake shadows for reality; the freed prisoner who sees truth returns to hostility — enlightenment is painful and unwelcome.</p>
+          <ul>
+            <li>Stages: chains → ascent → blinding light → return → rejection. Education as turning the soul, not filling it.</li>
+            <li>Exam angle: Camus-vs-Plato pairing (ignorance vs enlightenment); narration-technique trio with Ramachandran/Camus.</li>
+          </ul>
+
+          <h4>8. Albert Camus — “The Myth of Sisyphus”</h4>
+          <p><strong>Core:</strong> happiness through acceptance of the absurd — Sisyphus happy not by escaping the rock but by owning the struggle.</p>
+          <ul>
+            <li>The absurd = human hunger for meaning vs silent world; revolt (not suicide, physical or philosophical) is the answer.</li>
+            <li>Exam angle: Camus-vs-Plato; “narrate the myth and its philosophical conclusion” is a ready-made 5-mark arc.</li>
+          </ul>
+
+          <h4>9. Robert Frost — “The Road Not Taken”</h4>
+          <p><strong>Core:</strong> choice is ambiguous — the roads are nearly identical; meaning is constructed retrospectively (“I shall be telling this with a sigh”).</p>
+          <ul>
+            <li>Not a praise of individualism but a meditation on self-deception and hindsight narrative.</li>
+            <li>Exam angle: Frost-vs-Chekhov (choice/regret) — Frost regrets forward (what the choice will mean), Chekhov's actor regrets backward (what was wasted).</li>
+          </ul>
+
+          <h4>10. Anton Chekhov — “Swan Song”</h4>
+          <p><strong>Core:</strong> an aging actor's night-time reckoning — fleeting fame, lost opportunity, a life performed but not lived.</p>
+          <ul>
+            <li>Regret over squandered talent; applause remembered against an empty theatre.</li>
+            <li>Exam angle: Frost-vs-Chekhov pairing; “regret” theme paragraph practically writes itself.</li>
+          </ul>
+        `
+      },
+      {
+        id: "comparison-drill",
+        title: "Comparison pairings + paragraph formula",
+        freq: "high",
+        summary: "Frost-vs-Chekhov, Camus-vs-Plato, narration across Ramachandran/Camus/Plato. One comparative paragraph with the link-sentence formula repeats almost every year regardless of the pair.",
+        exam: "“Compare … with reference to …” — marked on a genuine linking insight, not two separate summaries stapled together.",
+        html: `
+          <p>The examiner reuses this format yearly with rotating pairs. The mark lies in the <strong>link sentence</strong> — the explicit shared-theme claim both halves serve.</p>
+
+          <h4>The three banked pairings</h4>
+          <table>
+            <tr><th>Pair</th><th>Shared theme (your link sentence)</th></tr>
+            <tr><td>Frost vs Chekhov</td><td>Choice and regret — Frost constructs meaning <em>after</em> choosing; Chekhov's actor mourns a life already spent</td></tr>
+            <tr><td>Camus vs Plato</td><td>Ignorance vs enlightenment — the Cave prisoner must be dragged toward light; Sisyphus finds light inside the condemned task itself</td></tr>
+            <tr><td>Ramachandran / Camus / Plato (narration)</td><td>Story as argument — anecdote and myth carry philosophy further than exposition alone</td></tr>
+          </table>
+
+          <h4>Comparative paragraph formula (8–10 lines)</h4>
+          <ol>
+            <li><strong>Link sentence:</strong> “Both X and Y explore [theme], but from opposite ends — …”</li>
+            <li><strong>Text A evidence</strong> (2–3 lines, one concrete detail).</li>
+            <li><strong>Text B evidence</strong> (2–3 lines, one concrete detail).</li>
+            <li><strong>Synthesis:</strong> what the contrast teaches about the theme (1–2 lines).</li>
+          </ol>
+
+          <div class="example-box"><div class="ex-label">Model link sentences (reuse the shape)</div>
+          “Both Frost and Chekhov stage a reckoning with choice, but Frost's traveller invents meaning for a road barely different, while Chekhov's actor confronts meaning already lost.”<br>
+          “Plato and Camus both ask what enlightenment costs: Plato's prisoner is blinded by the sun he resisted, while Camus' Sisyphus becomes luminous inside the very punishment meant to crush him.”</div>
         `
       }
     ]
