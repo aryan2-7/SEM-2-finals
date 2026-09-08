@@ -29,14 +29,14 @@ Check items off as you actually study them, not skim them. Organized by official
 - [x] Digital literacy vs. social media use — argue they're not equivalent, 2–3 reasons
 - [x] Visual communication basics
 - [x] Writing with collaborators — task distribution/deadline message
-- [ ] Rhetorical strategy: persuasion
-- [ ] Rhetorical strategy: process analysis
-- [ ] Rhetorical strategy: cause and effect
-- [ ] Rhetorical strategy: narrative analysis
-- [ ] Rhetorical strategy: division and classification
-- [ ] Rhetorical strategy: definition
-- [ ] Rhetorical strategy: description
-- [ ] Rhetorical strategy: comparison and contrast
+- [x] Rhetorical strategy: persuasion
+- [x] Rhetorical strategy: process analysis
+- [x] Rhetorical strategy: cause and effect
+- [x] Rhetorical strategy: narrative analysis
+- [x] Rhetorical strategy: division and classification
+- [x] Rhetorical strategy: definition
+- [x] Rhetorical strategy: description
+- [x] Rhetorical strategy: comparison and contrast
 
 ## Unit IV — Organizational and Business Communication (8 hrs)
 
