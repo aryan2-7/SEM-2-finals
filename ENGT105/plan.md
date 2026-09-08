@@ -25,8 +25,8 @@ Check items off as you actually study them, not skim them. Organized by official
 
 - [x] Oral presentation — how to open (question/story, not script)
 - [x] Oral presentation — rehearsal rationale, full process flow
-- [ ] Digital literacy — definition
-- [ ] Digital literacy vs. social media use — argue they're not equivalent, 2–3 reasons
+- [x] Digital literacy — definition
+- [x] Digital literacy vs. social media use — argue they're not equivalent, 2–3 reasons
 - [ ] Visual communication basics
 - [ ] Writing with collaborators — task distribution/deadline message
 - [ ] Rhetorical strategy: persuasion
