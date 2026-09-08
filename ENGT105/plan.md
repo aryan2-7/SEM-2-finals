@@ -58,8 +58,8 @@ Check items off as you actually study them, not skim them. Organized by official
 ## Unit VI — Critical and Creative Thinking (14 hrs — heaviest, priority)
 
 **Reasoning**
-- [ ] Inductive vs. deductive reasoning — one Nepal-context example each
-- [ ] Toulmin's Model — claim, grounds, warrant, backing — one worked example
+- [x] Inductive vs. deductive reasoning — one Nepal-context example each
+- [x] Toulmin's Model — claim, grounds, warrant, backing — one worked example
 
 **The 10 assigned texts — know each core argument**
 - [ ] "We Are All Scientists" — Huxley
