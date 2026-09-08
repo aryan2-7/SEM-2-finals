@@ -8,10 +8,10 @@ Check items off as you actually study them, not skim them. Organized by official
 
 ## Unit I — Technical Communication Basics (6 hrs — light review)
 
-- [ ] Objectives of technical communication
-- [ ] Audience types (lay vs. expert)
-- [ ] The writing process stages (prewriting → drafting → revising → proofreading)
-- [ ] Document design — 4 aspects with examples: Organization, Order, Access, Variety
+- [x] Objectives of technical communication
+- [x] Audience types (lay vs. expert)
+- [x] The writing process stages (prewriting → drafting → revising → proofreading)
+- [x] Document design — 4 aspects with examples: Organization, Order, Access, Variety
 
 ## Unit II — Research Communication (10 hrs)
 
