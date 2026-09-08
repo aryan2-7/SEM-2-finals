@@ -15,11 +15,11 @@ Check items off as you actually study them, not skim them. Organized by official
 
 ## Unit II — Research Communication (10 hrs)
 
-- [ ] Concept paper — full structure (problem/question, objectives, methodology, timeline, budget)
-- [ ] Research proposal — Introduction section (practice standalone)
-- [ ] Research proposal — Project Description section (practice standalone)
-- [ ] Documentation/reference style — APA basics (author, year, italicized title, publisher)
-- [ ] Technical articles — structure and purpose
+- [x] Concept paper — full structure (problem/question, objectives, methodology, timeline, budget)
+- [x] Research proposal — Introduction section (practice standalone)
+- [x] Research proposal — Project Description section (practice standalone)
+- [x] Documentation/reference style — APA basics (author, year, italicized title, publisher)
+- [x] Technical articles — structure and purpose
 
 ## Unit III — Strategic/Rhetorical Communication (14 hrs — heaviest, priority)
 
@@ -40,15 +40,15 @@ Check items off as you actually study them, not skim them. Organized by official
 
 ## Unit IV — Organizational and Business Communication (8 hrs)
 
-- [ ] Memo format (To/From/Date/Subject/body/action)
+- [x] Memo format (To/From/Date/Subject/body/action)
 - [ ] Formal letter — 8 essential components
-- [ ] Formal letter — 5 optional components
-- [ ] Email structure, cc vs bcc, when to use a letter instead
-- [ ] Résumé — full structure
-- [ ] Job application letter
-- [ ] Internal proposals — outline structure
-- [ ] Internal reports — outline structure, appendices vs. executive summary
-- [ ] Writing for e-media
+- [x] Formal letter — 5 optional components
+- [x] Email structure, cc vs bcc, when to use a letter instead
+- [x] Résumé — full structure
+- [x] Job application letter
+- [x] Internal proposals — outline structure
+- [x] Internal reports — outline structure, appendices vs. executive summary
+- [X] Writing for e-media
 
 ## Unit V — Design and Innovation (12 hrs — your weakest-covered unit, don't skip)
 
