@@ -23,8 +23,8 @@ Check items off as you actually study them, not skim them. Organized by official
 
 ## Unit III — Strategic/Rhetorical Communication (14 hrs — heaviest, priority)
 
-- [ ] Oral presentation — how to open (question/story, not script)
-- [ ] Oral presentation — rehearsal rationale, full process flow
+- [x] Oral presentation — how to open (question/story, not script)
+- [x] Oral presentation — rehearsal rationale, full process flow
 - [ ] Digital literacy — definition
 - [ ] Digital literacy vs. social media use — argue they're not equivalent, 2–3 reasons
 - [ ] Visual communication basics
