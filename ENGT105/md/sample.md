@@ -1,4 +1,4 @@
-# ENGT-105 — March/April 2025 End-Sem Paper — Fully Answered
+# [ENGT-105 — March/April 2025 End-Sem Paper — Fully Answered](https://papersorted.github.io/papers/ENGT105/ENGT105_Mar-Apr_2025.pdf)
 
 **Format note:** Real exam is 8 of 9 questions × 5 marks = 40 marks, 2 hrs 30 min. Every question below is answered in full, exam-ready form — treat this as a completed past paper to memorize the structure and content of, not just skim.
 
