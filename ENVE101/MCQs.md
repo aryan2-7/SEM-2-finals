@@ -119,7 +119,7 @@ a) 50 mg/L  b) 5 mg/L  c) 60 mg/L  d) 100 mg/L
 
 **Q24.** During analysis of 1 litre water sample, 15 mg pollutant concentration was found. The concentration in ppb is:
 a) 15  b) 15×10⁶  c) 1.5×10⁶  d) 1.5×10⁴
-**Answer: d) 1.5×10⁴ ppb**
+**Answer: d) 1.5×10⁴ ppb** *(15 mg/L = 15 ppm; 1 ppm = 1000 ppb → 15,000 ppb = 1.5×10⁴ ppb)*
 
 **Q25.** The concentration of toluene (C₇H₈) in subsurface soil indicated 5 mg/kg. What is the toluene concentration in ppm?
 a) 5 ppm  b) 0.5 ppm  c) 50 ppm  d) 500 ppm
@@ -145,7 +145,7 @@ d) Accumulation = Input − Output
 
 **Q29.** A bypass stream does not go through which of the following?
 a) Process  b) Feed  c) Both a & b  d) Product
-**Answer: c) Both a & b** *(a bypass stream skips the process entirely)*
+**Answer: b) Process** *(a bypass stream skips the process entirely)*
 
 **Q30.** Adsorption of water pollutants on activated carbon is an example of ________ mass transfer.
 a) Solid-liquid  b) Solid-solid  c) Gas-liquid  d) Liquid-solid
@@ -153,7 +153,7 @@ a) Solid-liquid  b) Solid-solid  c) Gas-liquid  d) Liquid-solid
 
 **Q31.** Removal of fat, oil and grease from wastewater generated in a canteen is an example of which mass transfer?
 a) Liquid-solid  b) Solid-liquid  c) Liquid-gas  d) Liquid-liquid
-**Answer: a) Liquid-solid**
+**Answer: d) Liquid-liquid**
 
 **Q32.** Release of methane from anaerobic wastewater treatment is an example of:
 a) Gas-liquid mass transfer
@@ -294,7 +294,7 @@ a) Positioning  b) Obligatory  c) Functional  d) Marginal
 
 **Q55.** While doing an LCA of a whiteboard marker, a student found 80 g of aluminum is required per functional unit. If the known global reserve per person for aluminum is 660 kg, what is the material consumption in mPR (milli-Person-Reserve)?
 a) 0.012 mPR  b) 0.12 mPR  c) 1.2 mPR  d) 12.0 mPR
-**Answer: b) 0.12 mPR** 
+**Answer: b) 0.12 mPR** *(80 g ÷ 660,000 g = 1.212×10⁻⁴ PR = 0.1212 mPR ≈ 0.12 mPR)*
 
 ---
 
@@ -311,4 +311,4 @@ a) Ocean  b) Rocks  c) Atmosphere  d) Trees
 ---
 
 ## ⚠️ Flagged for Verification
-Q22, Q24, Q45, Q48, Q55 had numbers that didn't cleanly resolve to a single option with the standard formula — most likely OCR/scan artifacts in the source PDFs (several papers had garbled tables and stray characters). Working is shown for each; verify these specific ones against your lecture slides rather than trusting the marked answer blindly.
+Q22, Q45, Q48 had numbers that didn't cleanly resolve to a single option with the standard formula — most likely OCR/scan artifacts in the source PDFs (several papers had garbled tables and stray characters). Working is shown for each; verify these specific ones against your lecture slides rather than trusting the marked answer blindly.
