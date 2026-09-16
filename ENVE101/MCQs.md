@@ -290,7 +290,7 @@ d) Maximize recycling of materials and waste
 
 **Q54.** Properties considered "nice to have" by customer preference, that do not affect product substitutability, are called ________ properties.
 a) Positioning  b) Obligatory  c) Functional  d) Marginal
-**Answer: d) Marginal**
+**Answer: a) Positioning**
 
 **Q55.** While doing an LCA of a whiteboard marker, a student found 80 g of aluminum is required per functional unit. If the known global reserve per person for aluminum is 660 kg, what is the material consumption in mPR (milli-Person-Reserve)?
 a) 0.012 mPR  b) 0.12 mPR  c) 1.2 mPR  d) 12.0 mPR
