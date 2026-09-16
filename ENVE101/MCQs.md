@@ -107,7 +107,7 @@ a) Filtration  b) Aeration  c) Chlorination  d) Screening
 
 **Q22.** The estimated arithmetic population of a city after 20 years will be ________ if average population growth is 10,350 and the population of the base year is 74,100.
 a) 94,800  b) 95,000  c) 138,000  d) 74,100
-**Answer: b) 95,000** *(flagged — arithmetic method gives 74,100 + 2×10,350 = 94,800, closest to option (a). Verify against your lecture's exact arithmetic-growth method before relying on this.)*
+**Answer: a) 94,800**
 
 **Q23.** The BOD in the lake output (mixing of two streams: Q=10 m³/s, BOD=80 mg/L and Q=10 m³/s, BOD=20 mg/L) is:
 a) 50 mg/L  b) 5 mg/L  c) 60 mg/L  d) 100 mg/L
