@@ -119,7 +119,7 @@ a) 50 mg/L  b) 5 mg/L  c) 60 mg/L  d) 100 mg/L
 
 **Q24.** During analysis of 1 litre water sample, 15 mg pollutant concentration was found. The concentration in ppb is:
 a) 15  b) 15×10⁶  c) 1.5×10⁶  d) 1.5×10⁴
-**Answer: c) 1.5×10⁶ ppb** *(flagged — 15 mg/L = 15 ppm; 1 ppm = 1000 ppb → 15,000 ppb = 1.5×10⁴. This doesn't match option (c) cleanly; verify unit convention used in your notes.)*
+**Answer: d) 1.5×10⁴ ppb**
 
 **Q25.** The concentration of toluene (C₇H₈) in subsurface soil indicated 5 mg/kg. What is the toluene concentration in ppm?
 a) 5 ppm  b) 0.5 ppm  c) 50 ppm  d) 500 ppm
@@ -294,7 +294,7 @@ a) Positioning  b) Obligatory  c) Functional  d) Marginal
 
 **Q55.** While doing an LCA of a whiteboard marker, a student found 80 g of aluminum is required per functional unit. If the known global reserve per person for aluminum is 660 kg, what is the material consumption in mPR (milli-Person-Reserve)?
 a) 0.012 mPR  b) 0.12 mPR  c) 1.2 mPR  d) 12.0 mPR
-**Answer: c) 1.2 mPR** *(flagged — 80 g ÷ 660,000 g = 1.212×10⁻⁴ PR = 0.1212 mPR, which lands closer to option (b). Recheck the exact mPR definition/formula from your notes.)*
+**Answer: b) 0.12 mPR** 
 
 ---
 
