@@ -1,102 +1,73 @@
-# COMP 116 — 2.5-Day Study Plan
+# COMP116 — 2.5-Day Exam Study Plan
 
-Built from 28 questions across 10 past papers (2017–2025) and your 9 lecture decks. Time is weighted by how often each topic actually appears on the exam, not evenly split.
+**Exam: Friday**
 
-## Where the marks come from
-
-| Topic | Lecture(s) | PYQs hitting it | Share |
-|---|---|---|---|
-| Operator Overloading | L5 | 8 | ~29% |
-| Inheritance / Polymorphism / Virtual Base | L6, L7 | 9 | ~32% |
-| Templates | L8 | 6 | ~21% |
-| Classes, Objects, Static Members | L3 | 3 | ~11% |
-| Constructors / Destructors | L4 | 2 | ~7% |
-| Exception Handling | L9 | 2 | ~7% |
-| C++ Basics, Intro, Inline Functions | L1, L2 | 3 | ~11% |
-
-Operator overloading and the inheritance/polymorphism cluster are **60% of everything asked**. They anchor Day 1 and Day 2. Templates get a focused half-day. Everything else is one pass, not a deep dive — you already know it well enough from Section A MCQs.
+Plan is weighted by what the past papers actually test, not slide order:
+- **Operator overloading** — heaviest topic (10 of 28 programming questions)
+- **Inheritance** — close second (9 questions)
+- **Templates** — 5 questions, but full "hard" marks each
+- **Exceptions** — 2 standalone questions + embedded in several others
+- **Polymorphism** — not a standalone block; it's tested through the inheritance questions (virtual functions, runtime polymorphism show up in Q12, Q15, Q20, Q28)
 
 ---
 
-## Day 1 — Operator Overloading + Foundations (~7 hrs)
+## Today — light MCQ pass (30-45 min)
 
-**Morning block (3.5 hrs): Operator Overloading (L5)**
-- Read L5 slides fully: unary/binary overloading, friend-function overloading, I/O operator overloading.
-- Solve, by hand then compile-check:
-  - Q3 Circle by Constructor Overloading
-  - Q4 Complex Number Multiplication
-  - Q7 Length Class Addition (carry logic)
-  - Q9 Prefix/Postfix `++` (friend vs member — know both forms)
-  - Q13 Mount Everest Height (friend `operator-`, borrowing)
-  - Q17 Date Class Age (operator overloading with date logic)
-  - Q18 Age After a Period (normalization carries — same family as Q7/Q13)
-- Drill until you can write a friend `operator+`/`operator-` overload from memory without checking notes — this is the single highest-yield skill this semester.
-
-**Afternoon block (2 hrs): Classes, Objects, Static Members (L3) + Constructors/Destructors (L4)**
-- Skim L3 and L4 — access specifiers, static data members, static member functions, constructor types (default/parameterized/copy), destructor rules.
-- Solve:
-  - Q5 Province Array of Objects
-  - Q14 Static Object Counter (static counter *and* per-object serial number — both variants have appeared)
-  - Q22 Player Class
-
-**Evening block (1.5 hrs): C++ Basics (L1, L2)**
-- Skim L1 (POP vs OOP, OOP principles) and L2 (inline functions, function overloading, references vs pointers) — fast pass, these are mostly MCQ material.
-- Solve:
-  - Q1 Inch to Centimeter
-  - Q2 Circle Class (inline getters, private data)
-  - Q6 Inline Overloaded Area Functions (function overloading by signature)
-
-**End of Day 1 checkpoint:** you should be able to write, unprompted, a class with a friend operator overload, a static counter, and inline overloaded functions.
+Skim Lecture 1 and 2 slides once, just titles and bold terms — no notes. Then do the Section A MCQs from 2-3 papers (e.g. Aug 2019, Sep 2024) cold, no prep. This tells you which MCQ topics are shaky without burning energy, and primes your memory for tomorrow. Stop after 45 minutes even if unfinished.
 
 ---
 
-## Day 2 — Inheritance, Polymorphism, Exceptions (~7 hrs)
+## Tomorrow AM — Inheritance deep dive (~2.5 hrs)
 
-**Morning block (3.5 hrs): Inheritance (L6)**
-- Read L6 fully — this is your longest deck (51 slides) for a reason: base/derived, protected access, visibility modes, all 5 types of inheritance, **virtual base class**, function overriding, abstract classes, constructor/destructor order.
-- Solve:
-  - Q21 Employee Virtual Base Class
-  - Q26 Master Class with Virtual Base Class (near-identical structure to Q21 — do both to lock in the pattern)
-  - Q23 Rectangle and Calculate Inheritance
-  - Q24 Bank Account Inheritance (Saving/Current — single inheritance, two branches)
+Read Lecture 6 slides fully (longest deck, 51 pages — budget real time). Focus on:
+- Single vs multilevel vs multiple inheritance
+- Access specifier changes across public/protected/private inheritance
+- Constructor call order
+- Virtual base classes (the diamond problem) — directly tested in Q21, Q26, and implicitly in Q23/Q24/Q28
 
-**Afternoon block (2.5 hrs): Polymorphism (L7)**
-- Read L7 — types of polymorphism, static/dynamic binding, pointer to object and to derived classes, virtual functions, **pure virtual functions**, abstract classes.
-- Solve:
-  - Q12 Restaurant Bill with Runtime Polymorphism
-  - Q15 Library Book Fines with Runtime Polymorphism
-  - Q20 Digital Wallet with Abstract Class
-  - Q28 Publication Abstract Class with Runtime Polymorphism
-- These four all follow the same skeleton: abstract/virtual base pointer → array of pointers → `display()` called polymorphically. Once one clicks, the rest are fast.
+Then hand-write solutions (paper or editor, no compiler yet) for **Q21, Q23, Q24, Q26, Q28** from the PYQ file, in that order.
 
-**Evening block (1 hr): Exception Handling (L9)**
-- Read L9 — `try`/`catch`/`throw`, re-throwing, `this` pointer.
-- Solve:
-  - Q8 Alphabet or Digit Exception
-  - Q19 Maximum of Array with Exception Handling
+## Tomorrow PM — Templates deep dive (~2.5 hrs)
 
-**End of Day 2 checkpoint:** you should be able to write a virtual base class hierarchy and an abstract-class + polymorphic-array program without hesitating on syntax.
+Read Lecture 8 slides fully. Focus on:
+- Class templates vs function templates
+- Syntax for defining a member function outside the class template declaration (this exact MCQ pattern showed up in the 2018 paper)
+- Multiple template parameters
+
+Then solve **Q10, Q11, Q16, Q25, Q27** from the PYQ file. If you have a compiler available, actually compile at least 2 of these — template syntax errors are easy to make and hard to spot by eye.
+
+*Running low on time?* Cut this block to just Q10, Q11, Q16 — Q25/Q27 repeat the same pattern rather than teach something new.
 
 ---
 
-## Day 3 (half day, ~4 hrs) — Templates + Full Review
+## Day-after AM — Exception Handling (~1.5 hrs)
 
-**Morning block (2 hrs): Templates (L8)**
-- Read L8 — function templates, function templates with multiple template types, class templates.
-- Solve:
-  - Q10 Class Template Largest and Average
-  - Q11 Class Template Sort and Average
-  - Q16 Function Template with Multiple Types
-  - Q25 Calculator Class Template
-  - Q27 Function Template Array Average
+Read Lecture 9 slides (shortest deck, 17 pages — should go fast). Focus on:
+- try/catch/throw syntax
+- Catching by type (including catching a string vs `const char*` — an actual past MCQ)
+- Multiple catch blocks
+- Re-throwing
 
-**Late morning block (1.5 hrs): Timed mixed practice**
-- Pick 4–5 questions across different topics you haven't redone yet (mix operator overloading, inheritance, one template question) and solve them cold, under time pressure, without looking at the template's Hint until you're stuck.
+Then solve **Q8, Q19** from the PYQ file, and re-solve **Q15, Q20** — these embed exception-like validation logic even though they're framed as inheritance/polymorphism problems.
 
-**Final block (30 min): Weak-spot pass**
-- Go back to whichever topic gave you the most trouble in the blocks above and redo one question from it from scratch.
+## Day-after Midday — Operator Overloading full pass (~2 hrs)
+
+This is your strongest area — treat it as a fast, confident sweep, not slow relearning. Skim Lecture 5 slides for:
+- The friend-function-vs-member-function overload syntax difference (a recurring MCQ trap)
+- Which operators can't be overloaded
+
+Then speed-solve **Q1, Q2, Q3, Q4, Q6, Q7, Q9, Q13, Q17, Q18** from the PYQ file — aim for under 10 minutes each. Anything that takes much longer is a gap, not a strength — flag it.
+
+## Day-after PM — Mixed weak-spot review (~1 hr)
+
+Pick 3-4 questions across inheritance, templates, and exceptions that felt hardest earlier today, and re-solve them from scratch without looking at your notes. This is the highest-value hour for retention — redoing a half-known problem beats doing a new one.
+
+*If today's MCQ pass showed gaps in class basics / constructors (Lectures 3-4) too, swap this hour for that instead.*
 
 ---
 
-## How to use each PYQ entry
-Every question in `COMP116_PYQs.md` has Input/Output specs and 3–5 Tests. Write the program, then manually trace at least the edge-case tests (0, negative, boundary) — most of these papers are checked by exact output match, so getting the print format exactly right matters as much as the logic.
+## Friday morning — MCQ + recall sprint, no new coding
+
+- Run through Section A MCQs from every paper you have, timed.
+- Do a 10-minute freewrite from memory only: every operator overloading rule, every inheritance access-specifier rule, and the template syntax skeleton. Check against slides only to spot gaps.
+- **Do not** attempt new full programs this morning — it's too late for it to stick, and it risks shaking confidence right before the exam.
